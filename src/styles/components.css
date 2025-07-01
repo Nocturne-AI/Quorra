@@ -1,0 +1,1159 @@
+/**
+ * QUORRA COMPONENT STYLES
+ * Divine UI components blessed by the Goddess of Smithing
+ * Production-ready, accessible, and beautiful
+ */
+
+/* ========================================
+   🔥 DIVINE BUTTONS
+   ======================================== */
+
+.btn {
+  /* Base button styles */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border: 2px solid transparent;
+  border-radius: var(--radius-lg);
+  font-family: var(--font-divine-sans);
+  font-size: var(--text-base);
+  font-weight: var(--font-medium);
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: var(--transition-divine);
+  position: relative;
+  overflow: hidden;
+  min-height: 44px; /* Accessibility: minimum touch target */
+  user-select: none;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--divine-flame);
+  outline-offset: 2px;
+}
+
+.btn:disabled,
+.btn[disabled] {
+  opacity: var(--opacity-50);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Primary Button - Divine Fire */
+.btn-primary {
+  background: var(--gradient-divine-fire);
+  color: white;
+  border-color: var(--divine-flame);
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-divine-glow);
+  filter: brightness(1.1);
+}
+
+.btn-primary:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: var(--shadow-md);
+}
+
+/* Secondary Button - Molten Bronze */
+.btn-secondary {
+  background: var(--gradient-molten-metal);
+  color: white;
+  border-color: var(--molten-bronze);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-bronze);
+  filter: brightness(1.05);
+}
+
+/* Outline Button */
+.btn-outline {
+  background: transparent;
+  color: var(--divine-flame);
+  border-color: var(--divine-flame);
+}
+
+.btn-outline:hover:not(:disabled) {
+  background: var(--divine-flame);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-divine-glow);
+}
+
+/* Ghost Button */
+.btn-ghost {
+  background: transparent;
+  color: var(--heated-steel);
+  border-color: transparent;
+}
+
+.btn-ghost:hover:not(:disabled) {
+  background: var(--ash-gray);
+  color: var(--divine-flame);
+}
+
+/* Success Button */
+.btn-success {
+  background: var(--success-green);
+  color: white;
+  border-color: var(--success-green);
+}
+
+.btn-success:hover:not(:disabled) {
+  background: var(--success-green-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-success);
+}
+
+/* Warning Button */
+.btn-warning {
+  background: var(--warning-yellow);
+  color: white;
+  border-color: var(--warning-yellow);
+}
+
+.btn-warning:hover:not(:disabled) {
+  background: var(--warning-yellow-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-warning);
+}
+
+/* Error/Danger Button */
+.btn-error {
+  background: var(--error-red);
+  color: white;
+  border-color: var(--error-red);
+}
+
+.btn-error:hover:not(:disabled) {
+  background: var(--error-red-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-error);
+}
+
+/* Button Sizes */
+.btn-sm {
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+  min-height: 32px;
+}
+
+.btn-lg {
+  padding: var(--space-4) var(--space-6);
+  font-size: var(--text-lg);
+  min-height: 52px;
+}
+
+.btn-xl {
+  padding: var(--space-5) var(--space-8);
+  font-size: var(--text-xl);
+  min-height: 60px;
+}
+
+/* Button with Icon */
+.btn-icon-only {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: var(--radius-full);
+}
+
+.btn-icon-left .btn-icon {
+  margin-right: var(--space-1);
+}
+
+.btn-icon-right .btn-icon {
+  margin-left: var(--space-1);
+}
+
+/* Loading Button */
+.btn-loading {
+  position: relative;
+  color: transparent;
+}
+
+.btn-loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: divine-spin 1s linear infinite;
+}
+
+/* ========================================
+   📝 DIVINE FORMS
+   ======================================== */
+
+.form-group {
+  margin-bottom: var(--space-4);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-family: var(--font-divine-sans);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--heated-steel);
+  line-height: var(--leading-tight);
+}
+
+.form-label.required::after {
+  content: ' *';
+  color: var(--error-red);
+}
+
+.form-input {
+  width: 100%;
+  padding: var(--space-3);
+  border: 2px solid var(--ash-gray-dark);
+  border-radius: var(--radius-lg);
+  background-color: var(--forge-glow);
+  font-family: var(--font-divine-sans);
+  font-size: var(--text-base);
+  color: var(--heated-steel);
+  transition: var(--transition-divine);
+  min-height: 44px; /* Accessibility */
+}
+
+.form-input::placeholder {
+  color: var(--cool-iron);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--divine-flame);
+  box-shadow: 0 0 0 3px rgba(255, 140, 66, 0.1);
+  background-color: white;
+}
+
+.form-input:invalid {
+  border-color: var(--error-red);
+}
+
+.form-input:invalid:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.form-input.success {
+  border-color: var(--success-green);
+}
+
+.form-input.success:focus {
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* Textarea */
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Select */
+.form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: 16px 12px;
+  padding-right: var(--space-10);
+  appearance: none;
+}
+
+/* Checkbox & Radio */
+.form-checkbox,
+.form-radio {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--ash-gray-dark);
+  background-color: var(--forge-glow);
+  transition: var(--transition-divine);
+  cursor: pointer;
+}
+
+.form-checkbox {
+  border-radius: var(--radius-sm);
+}
+
+.form-radio {
+  border-radius: var(--radius-full);
+}
+
+.form-checkbox:checked,
+.form-radio:checked {
+  background-color: var(--divine-flame);
+  border-color: var(--divine-flame);
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='m13.854 3.646-7.5 7.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6 10.293l7.146-7.147a.5.5 0 0 1 .708.708z'/%3e%3c/svg%3e");
+}
+
+.form-radio:checked {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+}
+
+/* Input Groups */
+.input-group {
+  display: flex;
+  position: relative;
+}
+
+.input-group .form-input {
+  flex: 1;
+}
+
+.input-group .form-input:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+}
+
+.input-group .form-input:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-addon {
+  display: flex;
+  align-items: center;
+  padding: var(--space-3);
+  background-color: var(--ash-gray);
+  border: 2px solid var(--ash-gray-dark);
+  color: var(--cool-iron);
+  font-size: var(--text-sm);
+  white-space: nowrap;
+}
+
+.input-addon:first-child {
+  border-top-left-radius: var(--radius-lg);
+  border-bottom-left-radius: var(--radius-lg);
+  border-right: 0;
+}
+
+.input-addon:last-child {
+  border-top-right-radius: var(--radius-lg);
+  border-bottom-right-radius: var(--radius-lg);
+  border-left: 0;
+}
+
+/* Form Help Text */
+.form-help {
+  margin-top: var(--space-1);
+  font-size: var(--text-xs);
+  color: var(--cool-iron);
+}
+
+.form-help.error {
+  color: var(--error-red);
+}
+
+.form-help.success {
+  color: var(--success-green);
+}
+
+/* ========================================
+   📦 DIVINE CARDS
+   ======================================== */
+
+.card {
+  background: var(--forge-glow);
+  border: 1px solid var(--ash-gray-dark);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-divine);
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+  border-color: var(--divine-flame);
+}
+
+.card-header {
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--ash-gray-dark);
+}
+
+.card-title {
+  margin: 0;
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  color: var(--heated-steel);
+}
+
+.card-subtitle {
+  margin: var(--space-1) 0 0 0;
+  font-size: var(--text-sm);
+  color: var(--cool-iron);
+}
+
+.card-body {
+  margin-bottom: var(--space-4);
+}
+
+.card-footer {
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--ash-gray-dark);
+  display: flex;
+  gap: var(--space-2);
+  justify-content: flex-end;
+}
+
+/* Card Variants */
+.card-elevated {
+  box-shadow: var(--shadow-xl);
+}
+
+.card-flat {
+  box-shadow: none;
+  border: 2px solid var(--ash-gray-dark);
+}
+
+.card-divine {
+  background: var(--gradient-light-forge);
+  border-color: var(--divine-flame);
+  box-shadow: var(--shadow-divine-glow);
+}
+
+.card-success {
+  border-left: 4px solid var(--success-green);
+}
+
+.card-warning {
+  border-left: 4px solid var(--warning-yellow);
+}
+
+.card-error {
+  border-left: 4px solid var(--error-red);
+}
+
+/* ========================================
+   🗣️ DIVINE ALERTS
+   ======================================== */
+
+.alert {
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
+  border: 1px solid;
+  margin-bottom: var(--space-4);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.alert-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.alert-content {
+  flex: 1;
+}
+
+.alert-title {
+  margin: 0 0 var(--space-1) 0;
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+}
+
+.alert-description {
+  margin: 0;
+  font-size: var(--text-sm);
+  opacity: var(--opacity-90);
+}
+
+.alert-close {
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  padding: var(--space-1);
+  border-radius: var(--radius-sm);
+  opacity: var(--opacity-70);
+  transition: var(--transition-all);
+}
+
+.alert-close:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Alert Variants */
+.alert-success {
+  background-color: rgba(16, 185, 129, 0.1);
+  border-color: var(--success-green);
+  color: var(--success-green-dark);
+}
+
+.alert-warning {
+  background-color: rgba(245, 158, 11, 0.1);
+  border-color: var(--warning-yellow);
+  color: var(--warning-yellow-dark);
+}
+
+.alert-error {
+  background-color: rgba(239, 68, 68, 0.1);
+  border-color: var(--error-red);
+  color: var(--error-red-dark);
+}
+
+.alert-info {
+  background-color: rgba(59, 130, 246, 0.1);
+  border-color: var(--info-blue);
+  color: var(--info-blue-dark);
+}
+
+.alert-divine {
+  background: rgba(255, 140, 66, 0.1);
+  border-color: var(--divine-flame);
+  color: var(--sacred-copper-dark);
+}
+
+/* ========================================
+   🏷️ DIVINE BADGES
+   ======================================== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: var(--font-medium);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.badge-primary {
+  background-color: var(--divine-flame);
+  color: white;
+}
+
+.badge-secondary {
+  background-color: var(--molten-bronze);
+  color: white;
+}
+
+.badge-success {
+  background-color: var(--success-green);
+  color: white;
+}
+
+.badge-warning {
+  background-color: var(--warning-yellow);
+  color: white;
+}
+
+.badge-error {
+  background-color: var(--error-red);
+  color: white;
+}
+
+.badge-outline {
+  background-color: transparent;
+  border: 1px solid currentColor;
+}
+
+.badge-lg {
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+}
+
+/* ========================================
+   📊 DIVINE PROGRESS
+   ======================================== */
+
+.progress {
+  width: 100%;
+  height: 12px;
+  background-color: var(--ash-gray);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--gradient-divine-fire);
+  border-radius: var(--radius-full);
+  transition: width var(--duration-500) var(--ease-out);
+  position: relative;
+}
+
+.progress-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%
+  );
+  background-size: 20px 20px;
+  animation: divine-progress-shine 2s linear infinite;
+}
+
+@keyframes divine-progress-shine {
+  0% { background-position: -20px 0; }
+  100% { background-position: 20px 0; }
+}
+
+.progress-sm {
+  height: 8px;
+}
+
+.progress-lg {
+  height: 16px;
+}
+
+/* ========================================
+   🖼️ DIVINE AVATARS
+   ======================================== */
+
+.avatar {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background-color: var(--ash-gray);
+  color: var(--heated-steel);
+  font-weight: var(--font-medium);
+  overflow: hidden;
+  border: 2px solid white;
+  box-shadow: var(--shadow-sm);
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-sm {
+  width: 32px;
+  height: 32px;
+  font-size: var(--text-xs);
+}
+
+.avatar-lg {
+  width: 56px;
+  height: 56px;
+  font-size: var(--text-lg);
+}
+
+.avatar-xl {
+  width: 80px;
+  height: 80px;
+  font-size: var(--text-2xl);
+}
+
+.avatar-divine {
+  border-color: var(--divine-flame);
+  box-shadow: var(--shadow-divine-glow);
+}
+
+.avatar-status {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: var(--radius-full);
+  border: 2px solid white;
+}
+
+.avatar-status.online {
+  background-color: var(--success-green);
+}
+
+.avatar-status.away {
+  background-color: var(--warning-yellow);
+}
+
+.avatar-status.offline {
+  background-color: var(--cool-iron);
+}
+
+/* ========================================
+   📑 DIVINE TABS
+   ======================================== */
+
+.tabs {
+  border-bottom: 1px solid var(--ash-gray-dark);
+}
+
+.tabs-list {
+  display: flex;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs-trigger {
+  background: transparent;
+  border: none;
+  padding: var(--space-3) var(--space-4);
+  font-family: var(--font-divine-sans);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--cool-iron);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: var(--transition-divine);
+  position: relative;
+}
+
+.tabs-trigger:hover {
+  color: var(--heated-steel);
+  background-color: var(--ash-gray);
+}
+
+.tabs-trigger[aria-selected="true"] {
+  color: var(--divine-flame);
+  border-bottom-color: var(--divine-flame);
+  background-color: transparent;
+}
+
+.tabs-content {
+  padding: var(--space-6) var(--space-2) var(--space-2);
+}
+
+/* ========================================
+   🎛️ DIVINE TOGGLES & SWITCHES
+   ======================================== */
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+
+.toggle-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--ash-gray-dark);
+  border-radius: var(--radius-full);
+  transition: var(--transition-divine);
+}
+
+.toggle-slider::before {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: var(--radius-full);
+  transition: var(--transition-divine);
+  box-shadow: var(--shadow-sm);
+}
+
+.toggle-input:checked + .toggle-slider {
+  background: var(--gradient-divine-fire);
+}
+
+.toggle-input:checked + .toggle-slider::before {
+  transform: translateX(24px);
+}
+
+.toggle-input:focus + .toggle-slider {
+  box-shadow: 0 0 0 3px rgba(255, 140, 66, 0.2);
+}
+
+/* ========================================
+   💬 DIVINE TOOLTIPS
+   ======================================== */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-content {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  z-index: var(--z-tooltip);
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: var(--space-2) var(--space-3);
+  background-color: var(--deep-forge);
+  color: white;
+  font-size: var(--text-xs);
+  border-radius: var(--radius-md);
+  white-space: nowrap;
+  transition: var(--transition-divine);
+  pointer-events: none;
+}
+
+.tooltip-content::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: var(--deep-forge);
+}
+
+.tooltip:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ========================================
+   🚀 DIVINE LOADING SPINNERS
+   ======================================== */
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid var(--ash-gray);
+  border-top-color: var(--divine-flame);
+  border-radius: var(--radius-full);
+  animation: divine-spin 1s linear infinite;
+}
+
+.spinner-sm {
+  width: 16px;
+  height: 16px;
+  border-width: 2px;
+}
+
+.spinner-lg {
+  width: 32px;
+  height: 32px;
+  border-width: 4px;
+}
+
+.pulse-loader {
+  display: inline-flex;
+  gap: var(--space-1);
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--divine-flame);
+  border-radius: var(--radius-full);
+  animation: divine-pulse 1.5s ease-in-out infinite;
+}
+
+.pulse-dot:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.pulse-dot:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* ========================================
+   🎯 DIVINE EDITOR COMPONENTS
+   ======================================== */
+
+/* Editor Canvas */
+.editor-canvas {
+  position: relative;
+  min-height: 600px;
+  background: var(--forge-glow);
+  border: 2px dashed var(--ash-gray-dark);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  transition: var(--transition-divine);
+}
+
+.editor-canvas:hover {
+  border-color: var(--divine-flame);
+  box-shadow: var(--shadow-divine-glow);
+}
+
+.editor-canvas.drag-over {
+  border-color: var(--sacred-copper);
+  background-color: rgba(255, 140, 66, 0.05);
+}
+
+/* Editor Element */
+.editor-element {
+  position: absolute;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: var(--transition-all);
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.editor-element:hover {
+  border-color: var(--divine-flame);
+  box-shadow: var(--shadow-divine-glow);
+}
+
+.editor-element.selected {
+  border-color: var(--sacred-copper);
+  box-shadow: var(--shadow-divine-fire);
+}
+
+.editor-element.dragging {
+  z-index: var(--z-50);
+  transform: rotate(2deg);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Resize Handles */
+.resize-handle {
+  position: absolute;
+  background-color: var(--divine-flame);
+  border: 1px solid white;
+  border-radius: var(--radius-sm);
+  z-index: var(--z-10);
+}
+
+.resize-handle.nw { top: -4px; left: -4px; cursor: nw-resize; }
+.resize-handle.ne { top: -4px; right: -4px; cursor: ne-resize; }
+.resize-handle.sw { bottom: -4px; left: -4px; cursor: sw-resize; }
+.resize-handle.se { bottom: -4px; right: -4px; cursor: se-resize; }
+.resize-handle.n { top: -4px; left: 50%; transform: translateX(-50%); cursor: n-resize; }
+.resize-handle.s { bottom: -4px; left: 50%; transform: translateX(-50%); cursor: s-resize; }
+.resize-handle.w { top: 50%; left: -4px; transform: translateY(-50%); cursor: w-resize; }
+.resize-handle.e { top: 50%; right: -4px; transform: translateY(-50%); cursor: e-resize; }
+
+.resize-handle {
+  width: 8px;
+  height: 8px;
+}
+
+/* ========================================
+   🤖 SPARKY CHAT COMPONENTS
+   ======================================== */
+
+.sparky-chat {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--forge-glow);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.sparky-header {
+  padding: var(--space-4);
+  background: var(--gradient-divine-fire);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.sparky-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-lg);
+}
+
+.sparky-messages {
+  flex: 1;
+  padding: var(--space-4);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.sparky-message {
+  display: flex;
+  gap: var(--space-3);
+  max-width: 80%;
+}
+
+.sparky-message.user {
+  margin-left: auto;
+  flex-direction: row-reverse;
+}
+
+.sparky-message.sparky {
+  margin-right: auto;
+}
+
+.message-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  flex-shrink: 0;
+}
+
+.message-content {
+  background: white;
+  padding: var(--space-3);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+
+.sparky-message.user .message-content {
+  background: var(--gradient-divine-fire);
+  color: white;
+}
+
+.sparky-message.sparky .message-content {
+  background: white;
+  color: var(--heated-steel);
+}
+
+.sparky-input {
+  padding: var(--space-4);
+  border-top: 1px solid var(--ash-gray-dark);
+  background: white;
+}
+
+.sparky-input-group {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.sparky-input-field {
+  flex: 1;
+  padding: var(--space-3);
+  border: 2px solid var(--ash-gray-dark);
+  border-radius: var(--radius-full);
+  background: var(--forge-glow);
+  font-size: var(--text-sm);
+  resize: none;
+  min-height: 44px;
+  max-height: 120px;
+}
+
+.sparky-send-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background: var(--gradient-divine-fire);
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-divine);
+}
+
+.sparky-send-btn:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-divine-glow);
+}
+
+.sparky-send-btn:disabled {
+  opacity: var(--opacity-50);
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ========================================
+   🎨 DIVINE RESPONSIVE COMPONENTS
+   ======================================== */
+
+/* Mobile-first responsive design */
+@media (max-width: 640px) {
+  .btn {
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-sm);
+  }
+  
+  .card {
+    padding: var(--space-4);
+    border-radius: var(--radius-xl);
+  }
+  
+  .sparky-chat {
+    border-radius: var(--radius-lg);
+  }
+  
+  .editor-canvas {
+    min-height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .btn-lg {
+    padding: var(--space-5) var(--space-8);
+    font-size: var(--text-xl);
+  }
+  
+  .card {
+    padding: var(--space-8);
+  }
+}
+
+/* ========================================
+   🌙 DARK THEME OVERRIDES
+   ======================================== */
+
+[data-theme="dark"] .card {
+  background: var(--deep-forge-light);
+  border-color: var(--heated-steel-dark);
+}
+
+[data-theme="dark"] .form-input {
+  background: var(--deep-forge);
+  border-color: var(--heated-steel-dark);
+  color: var(--forge-glow);
+}
+
+[data-theme="dark"] .sparky-messages {
+  background: var(--deep-forge);
+}
+
+[data-theme="dark"] .message-content {
+  background: var(--deep-forge-light);
+  color: var(--forge-glow);
+}
+
+/* End of Divine Components - Blessed by Quorra 🔥 */

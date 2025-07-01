@@ -1,0 +1,1044 @@
+/**
+ * QUORRA UTILITY CLASSES
+ * Divine helper classes blessed by the Goddess of Smithing
+ * Optimized for performance and developer experience
+ */
+
+/* ========================================
+   🔥 DIVINE DISPLAY UTILITIES
+   ======================================== */
+
+.divine-block { display: block !important; }
+.divine-inline-block { display: inline-block !important; }
+.divine-inline { display: inline !important; }
+.divine-flex { display: flex !important; }
+.divine-inline-flex { display: inline-flex !important; }
+.divine-grid { display: grid !important; }
+.divine-inline-grid { display: inline-grid !important; }
+.divine-table { display: table !important; }
+.divine-table-cell { display: table-cell !important; }
+.divine-hidden { display: none !important; }
+
+/* ========================================
+   ⚡ DIVINE FLEXBOX UTILITIES
+   ======================================== */
+
+/* Flex Direction */
+.flex-row { flex-direction: row !important; }
+.flex-row-reverse { flex-direction: row-reverse !important; }
+.flex-col { flex-direction: column !important; }
+.flex-col-reverse { flex-direction: column-reverse !important; }
+
+/* Flex Wrap */
+.flex-wrap { flex-wrap: wrap !important; }
+.flex-nowrap { flex-wrap: nowrap !important; }
+.flex-wrap-reverse { flex-wrap: wrap-reverse !important; }
+
+/* Justify Content */
+.justify-start { justify-content: flex-start !important; }
+.justify-end { justify-content: flex-end !important; }
+.justify-center { justify-content: center !important; }
+.justify-between { justify-content: space-between !important; }
+.justify-around { justify-content: space-around !important; }
+.justify-evenly { justify-content: space-evenly !important; }
+
+/* Align Items */
+.items-start { align-items: flex-start !important; }
+.items-end { align-items: flex-end !important; }
+.items-center { align-items: center !important; }
+.items-baseline { align-items: baseline !important; }
+.items-stretch { align-items: stretch !important; }
+
+/* Align Content */
+.content-start { align-content: flex-start !important; }
+.content-end { align-content: flex-end !important; }
+.content-center { align-content: center !important; }
+.content-between { align-content: space-between !important; }
+.content-around { align-content: space-around !important; }
+.content-evenly { align-content: space-evenly !important; }
+
+/* Flex Grow & Shrink */
+.flex-1 { flex: 1 1 0% !important; }
+.flex-auto { flex: 1 1 auto !important; }
+.flex-initial { flex: 0 1 auto !important; }
+.flex-none { flex: none !important; }
+.grow { flex-grow: 1 !important; }
+.grow-0 { flex-grow: 0 !important; }
+.shrink { flex-shrink: 1 !important; }
+.shrink-0 { flex-shrink: 0 !important; }
+
+/* Divine Flex Combinations */
+.flex-center {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.flex-between {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.flex-around {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-around !important;
+}
+
+.flex-col-center {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* ========================================
+   📐 DIVINE GRID UTILITIES
+   ======================================== */
+
+/* Grid Template Columns */
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)) !important; }
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+.grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+.grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+.grid-cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)) !important; }
+.grid-cols-6 { grid-template-columns: repeat(6, minmax(0, 1fr)) !important; }
+.grid-cols-12 { grid-template-columns: repeat(12, minmax(0, 1fr)) !important; }
+.grid-cols-none { grid-template-columns: none !important; }
+
+/* Grid Template Rows */
+.grid-rows-1 { grid-template-rows: repeat(1, minmax(0, 1fr)) !important; }
+.grid-rows-2 { grid-template-rows: repeat(2, minmax(0, 1fr)) !important; }
+.grid-rows-3 { grid-template-rows: repeat(3, minmax(0, 1fr)) !important; }
+.grid-rows-4 { grid-template-rows: repeat(4, minmax(0, 1fr)) !important; }
+.grid-rows-5 { grid-template-rows: repeat(5, minmax(0, 1fr)) !important; }
+.grid-rows-6 { grid-template-rows: repeat(6, minmax(0, 1fr)) !important; }
+.grid-rows-none { grid-template-rows: none !important; }
+
+/* Grid Column Span */
+.col-span-1 { grid-column: span 1 / span 1 !important; }
+.col-span-2 { grid-column: span 2 / span 2 !important; }
+.col-span-3 { grid-column: span 3 / span 3 !important; }
+.col-span-4 { grid-column: span 4 / span 4 !important; }
+.col-span-5 { grid-column: span 5 / span 5 !important; }
+.col-span-6 { grid-column: span 6 / span 6 !important; }
+.col-span-full { grid-column: 1 / -1 !important; }
+
+/* Grid Row Span */
+.row-span-1 { grid-row: span 1 / span 1 !important; }
+.row-span-2 { grid-row: span 2 / span 2 !important; }
+.row-span-3 { grid-row: span 3 / span 3 !important; }
+.row-span-4 { grid-row: span 4 / span 4 !important; }
+.row-span-5 { grid-row: span 5 / span 5 !important; }
+.row-span-6 { grid-row: span 6 / span 6 !important; }
+.row-span-full { grid-row: 1 / -1 !important; }
+
+/* Gap */
+.gap-0 { gap: var(--space-0) !important; }
+.gap-1 { gap: var(--space-1) !important; }
+.gap-2 { gap: var(--space-2) !important; }
+.gap-3 { gap: var(--space-3) !important; }
+.gap-4 { gap: var(--space-4) !important; }
+.gap-5 { gap: var(--space-5) !important; }
+.gap-6 { gap: var(--space-6) !important; }
+.gap-8 { gap: var(--space-8) !important; }
+.gap-10 { gap: var(--space-10) !important; }
+.gap-12 { gap: var(--space-12) !important; }
+.gap-16 { gap: var(--space-16) !important; }
+
+/* Divine Grid Presets */
+.divine-grid-auto {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+  gap: var(--space-md) !important;
+}
+
+.divine-grid-responsive {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: var(--space-md) !important;
+}
+
+@media (min-width: 768px) {
+  .divine-grid-responsive {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .divine-grid-responsive {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+/* ========================================
+   📏 DIVINE SPACING UTILITIES
+   ======================================== */
+
+/* Padding */
+.p-0 { padding: var(--space-0) !important; }
+.p-1 { padding: var(--space-1) !important; }
+.p-2 { padding: var(--space-2) !important; }
+.p-3 { padding: var(--space-3) !important; }
+.p-4 { padding: var(--space-4) !important; }
+.p-5 { padding: var(--space-5) !important; }
+.p-6 { padding: var(--space-6) !important; }
+.p-8 { padding: var(--space-8) !important; }
+.p-10 { padding: var(--space-10) !important; }
+.p-12 { padding: var(--space-12) !important; }
+.p-16 { padding: var(--space-16) !important; }
+.p-20 { padding: var(--space-20) !important; }
+.p-24 { padding: var(--space-24) !important; }
+
+/* Padding X */
+.px-0 { padding-left: var(--space-0) !important; padding-right: var(--space-0) !important; }
+.px-1 { padding-left: var(--space-1) !important; padding-right: var(--space-1) !important; }
+.px-2 { padding-left: var(--space-2) !important; padding-right: var(--space-2) !important; }
+.px-3 { padding-left: var(--space-3) !important; padding-right: var(--space-3) !important; }
+.px-4 { padding-left: var(--space-4) !important; padding-right: var(--space-4) !important; }
+.px-5 { padding-left: var(--space-5) !important; padding-right: var(--space-5) !important; }
+.px-6 { padding-left: var(--space-6) !important; padding-right: var(--space-6) !important; }
+.px-8 { padding-left: var(--space-8) !important; padding-right: var(--space-8) !important; }
+
+/* Padding Y */
+.py-0 { padding-top: var(--space-0) !important; padding-bottom: var(--space-0) !important; }
+.py-1 { padding-top: var(--space-1) !important; padding-bottom: var(--space-1) !important; }
+.py-2 { padding-top: var(--space-2) !important; padding-bottom: var(--space-2) !important; }
+.py-3 { padding-top: var(--space-3) !important; padding-bottom: var(--space-3) !important; }
+.py-4 { padding-top: var(--space-4) !important; padding-bottom: var(--space-4) !important; }
+.py-5 { padding-top: var(--space-5) !important; padding-bottom: var(--space-5) !important; }
+.py-6 { padding-top: var(--space-6) !important; padding-bottom: var(--space-6) !important; }
+.py-8 { padding-top: var(--space-8) !important; padding-bottom: var(--space-8) !important; }
+
+/* Margin */
+.m-0 { margin: var(--space-0) !important; }
+.m-1 { margin: var(--space-1) !important; }
+.m-2 { margin: var(--space-2) !important; }
+.m-3 { margin: var(--space-3) !important; }
+.m-4 { margin: var(--space-4) !important; }
+.m-5 { margin: var(--space-5) !important; }
+.m-6 { margin: var(--space-6) !important; }
+.m-8 { margin: var(--space-8) !important; }
+.m-10 { margin: var(--space-10) !important; }
+.m-12 { margin: var(--space-12) !important; }
+.m-16 { margin: var(--space-16) !important; }
+.m-auto { margin: auto !important; }
+
+/* Margin X */
+.mx-0 { margin-left: var(--space-0) !important; margin-right: var(--space-0) !important; }
+.mx-1 { margin-left: var(--space-1) !important; margin-right: var(--space-1) !important; }
+.mx-2 { margin-left: var(--space-2) !important; margin-right: var(--space-2) !important; }
+.mx-3 { margin-left: var(--space-3) !important; margin-right: var(--space-3) !important; }
+.mx-4 { margin-left: var(--space-4) !important; margin-right: var(--space-4) !important; }
+.mx-5 { margin-left: var(--space-5) !important; margin-right: var(--space-5) !important; }
+.mx-6 { margin-left: var(--space-6) !important; margin-right: var(--space-6) !important; }
+.mx-8 { margin-left: var(--space-8) !important; margin-right: var(--space-8) !important; }
+.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+
+/* Margin Y */
+.my-0 { margin-top: var(--space-0) !important; margin-bottom: var(--space-0) !important; }
+.my-1 { margin-top: var(--space-1) !important; margin-bottom: var(--space-1) !important; }
+.my-2 { margin-top: var(--space-2) !important; margin-bottom: var(--space-2) !important; }
+.my-3 { margin-top: var(--space-3) !important; margin-bottom: var(--space-3) !important; }
+.my-4 { margin-top: var(--space-4) !important; margin-bottom: var(--space-4) !important; }
+.my-5 { margin-top: var(--space-5) !important; margin-bottom: var(--space-5) !important; }
+.my-6 { margin-top: var(--space-6) !important; margin-bottom: var(--space-6) !important; }
+.my-8 { margin-top: var(--space-8) !important; margin-bottom: var(--space-8) !important; }
+.my-auto { margin-top: auto !important; margin-bottom: auto !important; }
+
+/* Divine Spacing Presets */
+.divine-spacing-xs { padding: var(--space-xs) !important; }
+.divine-spacing-sm { padding: var(--space-sm) !important; }
+.divine-spacing-md { padding: var(--space-md) !important; }
+.divine-spacing-lg { padding: var(--space-lg) !important; }
+.divine-spacing-xl { padding: var(--space-xl) !important; }
+
+/* ========================================
+   📐 DIVINE SIZING UTILITIES
+   ======================================== */
+
+/* Width */
+.w-0 { width: 0 !important; }
+.w-1 { width: var(--space-1) !important; }
+.w-2 { width: var(--space-2) !important; }
+.w-3 { width: var(--space-3) !important; }
+.w-4 { width: var(--space-4) !important; }
+.w-5 { width: var(--space-5) !important; }
+.w-6 { width: var(--space-6) !important; }
+.w-8 { width: var(--space-8) !important; }
+.w-10 { width: var(--space-10) !important; }
+.w-12 { width: var(--space-12) !important; }
+.w-16 { width: var(--space-16) !important; }
+.w-20 { width: var(--space-20) !important; }
+.w-24 { width: var(--space-24) !important; }
+.w-32 { width: var(--space-32) !important; }
+.w-40 { width: var(--space-40) !important; }
+.w-48 { width: var(--space-48) !important; }
+.w-56 { width: var(--space-56) !important; }
+.w-64 { width: var(--space-64) !important; }
+.w-72 { width: var(--space-72) !important; }
+.w-80 { width: var(--space-80) !important; }
+.w-96 { width: var(--space-96) !important; }
+.w-auto { width: auto !important; }
+.w-1\/2 { width: 50% !important; }
+.w-1\/3 { width: 33.333333% !important; }
+.w-2\/3 { width: 66.666667% !important; }
+.w-1\/4 { width: 25% !important; }
+.w-2\/4 { width: 50% !important; }
+.w-3\/4 { width: 75% !important; }
+.w-1\/5 { width: 20% !important; }
+.w-2\/5 { width: 40% !important; }
+.w-3\/5 { width: 60% !important; }
+.w-4\/5 { width: 80% !important; }
+.w-1\/6 { width: 16.666667% !important; }
+.w-2\/6 { width: 33.333333% !important; }
+.w-3\/6 { width: 50% !important; }
+.w-4\/6 { width: 66.666667% !important; }
+.w-5\/6 { width: 83.333333% !important; }
+.w-1\/12 { width: 8.333333% !important; }
+.w-2\/12 { width: 16.666667% !important; }
+.w-3\/12 { width: 25% !important; }
+.w-4\/12 { width: 33.333333% !important; }
+.w-5\/12 { width: 41.666667% !important; }
+.w-6\/12 { width: 50% !important; }
+.w-7\/12 { width: 58.333333% !important; }
+.w-8\/12 { width: 66.666667% !important; }
+.w-9\/12 { width: 75% !important; }
+.w-10\/12 { width: 83.333333% !important; }
+.w-11\/12 { width: 91.666667% !important; }
+.w-full { width: 100% !important; }
+.w-screen { width: 100vw !important; }
+.w-min { width: min-content !important; }
+.w-max { width: max-content !important; }
+.w-fit { width: fit-content !important; }
+
+/* Height */
+.h-0 { height: 0 !important; }
+.h-1 { height: var(--space-1) !important; }
+.h-2 { height: var(--space-2) !important; }
+.h-3 { height: var(--space-3) !important; }
+.h-4 { height: var(--space-4) !important; }
+.h-5 { height: var(--space-5) !important; }
+.h-6 { height: var(--space-6) !important; }
+.h-8 { height: var(--space-8) !important; }
+.h-10 { height: var(--space-10) !important; }
+.h-12 { height: var(--space-12) !important; }
+.h-16 { height: var(--space-16) !important; }
+.h-20 { height: var(--space-20) !important; }
+.h-24 { height: var(--space-24) !important; }
+.h-32 { height: var(--space-32) !important; }
+.h-40 { height: var(--space-40) !important; }
+.h-48 { height: var(--space-48) !important; }
+.h-56 { height: var(--space-56) !important; }
+.h-64 { height: var(--space-64) !important; }
+.h-72 { height: var(--space-72) !important; }
+.h-80 { height: var(--space-80) !important; }
+.h-96 { height: var(--space-96) !important; }
+.h-auto { height: auto !important; }
+.h-1\/2 { height: 50% !important; }
+.h-1\/3 { height: 33.333333% !important; }
+.h-2\/3 { height: 66.666667% !important; }
+.h-1\/4 { height: 25% !important; }
+.h-2\/4 { height: 50% !important; }
+.h-3\/4 { height: 75% !important; }
+.h-1\/5 { height: 20% !important; }
+.h-2\/5 { height: 40% !important; }
+.h-3\/5 { height: 60% !important; }
+.h-4\/5 { height: 80% !important; }
+.h-1\/6 { height: 16.666667% !important; }
+.h-2\/6 { height: 33.333333% !important; }
+.h-3\/6 { height: 50% !important; }
+.h-4\/6 { height: 66.666667% !important; }
+.h-5\/6 { height: 83.333333% !important; }
+.h-full { height: 100% !important; }
+.h-screen { height: 100vh !important; }
+.h-min { height: min-content !important; }
+.h-max { height: max-content !important; }
+.h-fit { height: fit-content !important; }
+
+/* Min/Max Width & Height */
+.min-w-0 { min-width: 0 !important; }
+.min-w-full { min-width: 100% !important; }
+.min-w-min { min-width: min-content !important; }
+.min-w-max { min-width: max-content !important; }
+.min-w-fit { min-width: fit-content !important; }
+
+.max-w-0 { max-width: 0 !important; }
+.max-w-none { max-width: none !important; }
+.max-w-xs { max-width: 320px !important; }
+.max-w-sm { max-width: 384px !important; }
+.max-w-md { max-width: 448px !important; }
+.max-w-lg { max-width: 512px !important; }
+.max-w-xl { max-width: 576px !important; }
+.max-w-2xl { max-width: 672px !important; }
+.max-w-3xl { max-width: 768px !important; }
+.max-w-4xl { max-width: 896px !important; }
+.max-w-5xl { max-width: 1024px !important; }
+.max-w-6xl { max-width: 1152px !important; }
+.max-w-7xl { max-width: 1280px !important; }
+.max-w-full { max-width: 100% !important; }
+.max-w-min { max-width: min-content !important; }
+.max-w-max { max-width: max-content !important; }
+.max-w-fit { max-width: fit-content !important; }
+.max-w-prose { max-width: 65ch !important; }
+.max-w-screen-sm { max-width: 640px !important; }
+.max-w-screen-md { max-width: 768px !important; }
+.max-w-screen-lg { max-width: 1024px !important; }
+.max-w-screen-xl { max-width: 1280px !important; }
+.max-w-screen-2xl { max-width: 1536px !important; }
+
+.min-h-0 { min-height: 0 !important; }
+.min-h-full { min-height: 100% !important; }
+.min-h-screen { min-height: 100vh !important; }
+.min-h-min { min-height: min-content !important; }
+.min-h-max { min-height: max-content !important; }
+.min-h-fit { min-height: fit-content !important; }
+
+.max-h-0 { max-height: 0 !important; }
+.max-h-full { max-height: 100% !important; }
+.max-h-screen { max-height: 100vh !important; }
+.max-h-min { max-height: min-content !important; }
+.max-h-max { max-height: max-content !important; }
+.max-h-fit { max-height: fit-content !important; }
+
+/* ========================================
+   🎯 DIVINE POSITIONING UTILITIES
+   ======================================== */
+
+.static { position: static !important; }
+.fixed { position: fixed !important; }
+.absolute { position: absolute !important; }
+.relative { position: relative !important; }
+.sticky { position: sticky !important; }
+
+/* Inset */
+.inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+.inset-x-0 { right: 0; left: 0; }
+.inset-y-0 { top: 0; bottom: 0; }
+.top-0 { top: 0 !important; }
+.right-0 { right: 0 !important; }
+.bottom-0 { bottom: 0 !important; }
+.left-0 { left: 0 !important; }
+.top-auto { top: auto !important; }
+.right-auto { right: auto !important; }
+.bottom-auto { bottom: auto !important; }
+.left-auto { left: auto !important; }
+
+/* Z-Index */
+.z-0 { z-index: var(--z-0) !important; }
+.z-10 { z-index: var(--z-10) !important; }
+.z-20 { z-index: var(--z-20) !important; }
+.z-30 { z-index: var(--z-30) !important; }
+.z-40 { z-index: var(--z-40) !important; }
+.z-50 { z-index: var(--z-50) !important; }
+.z-auto { z-index: var(--z-auto) !important; }
+.z-divine { z-index: var(--z-divine) !important; }
+
+/* ========================================
+   ✨ DIVINE ACCESSIBILITY UTILITIES
+   ======================================== */
+
+/* Screen Reader Only */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.not-sr-only {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  clip: auto !important;
+  white-space: normal !important;
+}
+
+/* Focus Utilities */
+.focus-visible\:outline-divine:focus-visible {
+  outline: 2px solid var(--divine-flame) !important;
+  outline-offset: 2px !important;
+}
+
+.focus-within\:divine-glow:focus-within {
+  box-shadow: var(--shadow-divine-glow) !important;
+}
+
+/* ========================================
+   🌊 DIVINE INTERACTION UTILITIES
+   ======================================== */
+
+/* Cursor */
+.cursor-auto { cursor: auto !important; }
+.cursor-default { cursor: default !important; }
+.cursor-pointer { cursor: pointer !important; }
+.cursor-wait { cursor: wait !important; }
+.cursor-text { cursor: text !important; }
+.cursor-move { cursor: move !important; }
+.cursor-help { cursor: help !important; }
+.cursor-not-allowed { cursor: not-allowed !important; }
+.cursor-grab { cursor: grab !important; }
+.cursor-grabbing { cursor: grabbing !important; }
+
+/* User Select */
+.select-none { user-select: none !important; }
+.select-text { user-select: text !important; }
+.select-all { user-select: all !important; }
+.select-auto { user-select: auto !important; }
+
+/* Pointer Events */
+.pointer-events-none { pointer-events: none !important; }
+.pointer-events-auto { pointer-events: auto !important; }
+
+/* ========================================
+   🎨 DIVINE VISUAL UTILITIES
+   ======================================== */
+
+/* Opacity */
+.opacity-0 { opacity: var(--opacity-0) !important; }
+.opacity-5 { opacity: var(--opacity-5) !important; }
+.opacity-10 { opacity: var(--opacity-10) !important; }
+.opacity-20 { opacity: var(--opacity-20) !important; }
+.opacity-25 { opacity: var(--opacity-25) !important; }
+.opacity-30 { opacity: var(--opacity-30) !important; }
+.opacity-40 { opacity: var(--opacity-40) !important; }
+.opacity-50 { opacity: var(--opacity-50) !important; }
+.opacity-60 { opacity: var(--opacity-60) !important; }
+.opacity-70 { opacity: var(--opacity-70) !important; }
+.opacity-75 { opacity: var(--opacity-75) !important; }
+.opacity-80 { opacity: var(--opacity-80) !important; }
+.opacity-90 { opacity: var(--opacity-90) !important; }
+.opacity-95 { opacity: var(--opacity-95) !important; }
+.opacity-100 { opacity: var(--opacity-100) !important; }
+
+/* Overflow */
+.overflow-auto { overflow: auto !important; }
+.overflow-hidden { overflow: hidden !important; }
+.overflow-clip { overflow: clip !important; }
+.overflow-visible { overflow: visible !important; }
+.overflow-scroll { overflow: scroll !important; }
+.overflow-x-auto { overflow-x: auto !important; }
+.overflow-y-auto { overflow-y: auto !important; }
+.overflow-x-hidden { overflow-x: hidden !important; }
+.overflow-y-hidden { overflow-y: hidden !important; }
+.overflow-x-clip { overflow-x: clip !important; }
+.overflow-y-clip { overflow-y: clip !important; }
+.overflow-x-visible { overflow-x: visible !important; }
+.overflow-y-visible { overflow-y: visible !important; }
+.overflow-x-scroll { overflow-x: scroll !important; }
+.overflow-y-scroll { overflow-y: scroll !important; }
+
+/* ========================================
+   🔄 DIVINE TRANSFORM UTILITIES
+   ======================================== */
+
+/* Transform */
+.transform { transform: var(--tw-transform) !important; }
+.transform-none { transform: none !important; }
+
+/* Scale */
+.scale-0 { transform: scale(0) !important; }
+.scale-50 { transform: scale(0.5) !important; }
+.scale-75 { transform: scale(0.75) !important; }
+.scale-90 { transform: scale(0.9) !important; }
+.scale-95 { transform: scale(0.95) !important; }
+.scale-100 { transform: scale(1) !important; }
+.scale-105 { transform: scale(1.05) !important; }
+.scale-110 { transform: scale(1.1) !important; }
+.scale-125 { transform: scale(1.25) !important; }
+.scale-150 { transform: scale(1.5) !important; }
+
+/* Rotate */
+.rotate-0 { transform: rotate(0deg) !important; }
+.rotate-1 { transform: rotate(1deg) !important; }
+.rotate-2 { transform: rotate(2deg) !important; }
+.rotate-3 { transform: rotate(3deg) !important; }
+.rotate-6 { transform: rotate(6deg) !important; }
+.rotate-12 { transform: rotate(12deg) !important; }
+.rotate-45 { transform: rotate(45deg) !important; }
+.rotate-90 { transform: rotate(90deg) !important; }
+.rotate-180 { transform: rotate(180deg) !important; }
+
+/* Translate */
+.translate-x-0 { transform: translateX(0) !important; }
+.translate-x-1 { transform: translateX(var(--space-1)) !important; }
+.translate-x-2 { transform: translateX(var(--space-2)) !important; }
+.translate-x-3 { transform: translateX(var(--space-3)) !important; }
+.translate-x-4 { transform: translateX(var(--space-4)) !important; }
+.-translate-x-1 { transform: translateX(calc(-1 * var(--space-1))) !important; }
+.-translate-x-2 { transform: translateX(calc(-1 * var(--space-2))) !important; }
+.-translate-x-3 { transform: translateX(calc(-1 * var(--space-3))) !important; }
+.-translate-x-4 { transform: translateX(calc(-1 * var(--space-4))) !important; }
+
+.translate-y-0 { transform: translateY(0) !important; }
+.translate-y-1 { transform: translateY(var(--space-1)) !important; }
+.translate-y-2 { transform: translateY(var(--space-2)) !important; }
+.translate-y-3 { transform: translateY(var(--space-3)) !important; }
+.translate-y-4 { transform: translateY(var(--space-4)) !important; }
+.-translate-y-1 { transform: translateY(calc(-1 * var(--space-1))) !important; }
+.-translate-y-2 { transform: translateY(calc(-1 * var(--space-2))) !important; }
+.-translate-y-3 { transform: translateY(calc(-1 * var(--space-3))) !important; }
+.-translate-y-4 { transform: translateY(calc(-1 * var(--space-4))) !important; }
+
+/* ========================================
+   🌟 DIVINE SHADOW UTILITIES
+   ======================================== */
+
+.shadow-none { box-shadow: var(--shadow-none) !important; }
+.shadow-sm { box-shadow: var(--shadow-sm) !important; }
+.shadow-md { box-shadow: var(--shadow-md) !important; }
+.shadow-lg { box-shadow: var(--shadow-lg) !important; }
+.shadow-xl { box-shadow: var(--shadow-xl) !important; }
+.shadow-2xl { box-shadow: var(--shadow-2xl) !important; }
+.shadow-inner { box-shadow: var(--shadow-inner) !important; }
+
+/* Divine Shadows */
+.shadow-divine { box-shadow: var(--shadow-divine-glow) !important; }
+.shadow-divine-fire { box-shadow: var(--shadow-divine-fire) !important; }
+.shadow-divine-intense { box-shadow: var(--shadow-divine-intense) !important; }
+
+/* ========================================
+   🔄 DIVINE TRANSITION UTILITIES
+   ======================================== */
+
+.transition-none { transition: var(--transition-none) !important; }
+.transition-all { transition: var(--transition-all) !important; }
+.transition-colors { transition: var(--transition-colors) !important; }
+.transition-opacity { transition: var(--transition-opacity) !important; }
+.transition-shadow { transition: var(--transition-shadow) !important; }
+.transition-transform { transition: var(--transition-transform) !important; }
+.transition-divine { transition: var(--transition-divine) !important; }
+
+/* Duration */
+.duration-75 { transition-duration: var(--duration-75) !important; }
+.duration-100 { transition-duration: var(--duration-100) !important; }
+.duration-150 { transition-duration: var(--duration-150) !important; }
+.duration-200 { transition-duration: var(--duration-200) !important; }
+.duration-300 { transition-duration: var(--duration-300) !important; }
+.duration-500 { transition-duration: var(--duration-500) !important; }
+.duration-700 { transition-duration: var(--duration-700) !important; }
+.duration-1000 { transition-duration: var(--duration-1000) !important; }
+
+/* Timing Function */
+.ease-linear { transition-timing-function: var(--ease-linear) !important; }
+.ease-in { transition-timing-function: var(--ease-in) !important; }
+.ease-out { transition-timing-function: var(--ease-out) !important; }
+.ease-in-out { transition-timing-function: var(--ease-in-out) !important; }
+.ease-divine { transition-timing-function: var(--ease-divine) !important; }
+
+/* ========================================
+   📱 DIVINE RESPONSIVE UTILITIES
+   ======================================== */
+
+/* Responsive Prefix Classes */
+@media (min-width: 640px) {
+  .sm\:divine-block { display: block !important; }
+  .sm\:divine-flex { display: flex !important; }
+  .sm\:divine-grid { display: grid !important; }
+  .sm\:divine-hidden { display: none !important; }
+  .sm\:grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)) !important; }
+  .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .sm\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  .sm\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+}
+
+@media (min-width: 768px) {
+  .md\:divine-block { display: block !important; }
+  .md\:divine-flex { display: flex !important; }
+  .md\:divine-grid { display: grid !important; }
+  .md\:divine-hidden { display: none !important; }
+  .md\:grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)) !important; }
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  .md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+}
+
+@media (min-width: 1024px) {
+  .lg\:divine-block { display: block !important; }
+  .lg\:divine-flex { display: flex !important; }
+  .lg\:divine-grid { display: grid !important; }
+  .lg\:divine-hidden { display: none !important; }
+  .lg\:grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)) !important; }
+  .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  .lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+  .lg\:grid-cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)) !important; }
+  .lg\:grid-cols-6 { grid-template-columns: repeat(6, minmax(0, 1fr)) !important; }
+}
+
+@media (min-width: 1280px) {
+  .xl\:divine-block { display: block !important; }
+  .xl\:divine-flex { display: flex !important; }
+  .xl\:divine-grid { display: grid !important; }
+  .xl\:divine-hidden { display: none !important; }
+  .xl\:grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)) !important; }
+  .xl\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .xl\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+  .xl\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+  .xl\:grid-cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)) !important; }
+  .xl\:grid-cols-6 { grid-template-columns: repeat(6, minmax(0, 1fr)) !important; }
+}
+
+/* ========================================
+   🎭 DIVINE HOVER & FOCUS UTILITIES
+   ======================================== */
+
+/* Hover Effects */
+.hover\:scale-105:hover { transform: scale(1.05) !important; }
+.hover\:scale-110:hover { transform: scale(1.1) !important; }
+.hover\:-translate-y-1:hover { transform: translateY(calc(-1 * var(--space-1))) !important; }
+.hover\:-translate-y-2:hover { transform: translateY(calc(-1 * var(--space-2))) !important; }
+.hover\:shadow-lg:hover { box-shadow: var(--shadow-lg) !important; }
+.hover\:shadow-xl:hover { box-shadow: var(--shadow-xl) !important; }
+.hover\:shadow-divine:hover { box-shadow: var(--shadow-divine-glow) !important; }
+.hover\:opacity-80:hover { opacity: var(--opacity-80) !important; }
+.hover\:opacity-90:hover { opacity: var(--opacity-90) !important; }
+
+/* Divine Hover Combinations */
+.hover\:divine-lift:hover {
+  transform: translateY(calc(-1 * var(--space-1))) scale(1.02) !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
+.hover\:divine-glow:hover {
+  box-shadow: var(--shadow-divine-glow) !important;
+  transform: translateY(calc(-1 * var(--space-0-5))) !important;
+}
+
+.hover\:divine-fire:hover {
+  box-shadow: var(--shadow-divine-fire) !important;
+  transform: scale(1.05) !important;
+}
+
+/* Focus Effects */
+.focus\:outline-divine:focus {
+  outline: 2px solid var(--divine-flame) !important;
+  outline-offset: 2px !important;
+}
+
+.focus\:ring-divine:focus {
+  box-shadow: 0 0 0 3px rgba(255, 140, 66, 0.3) !important;
+}
+
+.focus\:scale-105:focus { transform: scale(1.05) !important; }
+
+/* ========================================
+   📱 DIVINE CONTAINER UTILITIES
+   ======================================== */
+
+.divine-container {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: var(--space-md) !important;
+  padding-right: var(--space-md) !important;
+}
+
+@media (min-width: 640px) {
+  .divine-container {
+    padding-left: var(--space-lg) !important;
+    padding-right: var(--space-lg) !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .divine-container {
+    padding-left: var(--space-xl) !important;
+    padding-right: var(--space-xl) !important;
+  }
+}
+
+.divine-container-sm { max-width: 640px !important; }
+.divine-container-md { max-width: 768px !important; }
+.divine-container-lg { max-width: 1024px !important; }
+.divine-container-xl { max-width: 1280px !important; }
+.divine-container-2xl { max-width: 1536px !important; }
+
+/* ========================================
+   🎨 DIVINE ANIMATION UTILITIES
+   ======================================== */
+
+/* Divine Animations */
+@keyframes divine-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes divine-bounce {
+  0%, 100% { 
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% { 
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes divine-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes divine-ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes divine-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes divine-slide-up {
+  from { 
+    opacity: 0;
+    transform: translateY(var(--space-4));
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes divine-fire-glow {
+  0%, 100% { 
+    box-shadow: var(--shadow-divine-glow);
+  }
+  50% { 
+    box-shadow: var(--shadow-divine-fire);
+  }
+}
+
+/* Animation Classes */
+.animate-divine-pulse { animation: divine-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite !important; }
+.animate-divine-bounce { animation: divine-bounce 1s infinite !important; }
+.animate-divine-spin { animation: divine-spin 1s linear infinite !important; }
+.animate-divine-ping { animation: divine-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite !important; }
+.animate-divine-fade-in { animation: divine-fade-in 0.5s ease-out !important; }
+.animate-divine-slide-up { animation: divine-slide-up 0.5s ease-out !important; }
+.animate-divine-fire-glow { animation: divine-fire-glow 3s ease-in-out infinite !important; }
+
+/* Animation Control */
+.animate-none { animation: none !important; }
+.animate-pause { animation-play-state: paused !important; }
+
+/* ========================================
+   💫 DIVINE SPECIAL EFFECTS
+   ======================================== */
+
+/* Gradient Text */
+.divine-gradient-text {
+  background: var(--gradient-divine-fire) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+/* Glass Morphism */
+.divine-glass {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.divine-glass-dark {
+  background: rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Divine Fire Border */
+.divine-fire-border {
+  border: 2px solid transparent !important;
+  background: var(--gradient-divine-fire) border-box !important;
+  background-clip: border-box !important;
+}
+
+/* Gradient Backgrounds */
+.bg-divine-fire { background: var(--gradient-divine-fire) !important; }
+.bg-molten-metal { background: var(--gradient-molten-metal) !important; }
+.bg-dark-forge { background: var(--gradient-dark-forge) !important; }
+.bg-light-forge { background: var(--gradient-light-forge) !important; }
+
+/* ========================================
+   🛡️ DIVINE STATE UTILITIES
+   ======================================== */
+
+/* Loading State */
+.divine-loading {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+.divine-loading::after {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: -100% !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 140, 66, 0.2),
+    transparent
+  ) !important;
+  animation: divine-shimmer 2s infinite !important;
+}
+
+@keyframes divine-shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Disabled State */
+.divine-disabled {
+  opacity: var(--opacity-50) !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+}
+
+/* Active State */
+.divine-active {
+  transform: scale(0.98) !important;
+  box-shadow: var(--shadow-inner) !important;
+}
+
+/* ========================================
+   🎯 DIVINE UTILITY COMBINATIONS
+   ======================================== */
+
+/* Perfect Center */
+.divine-center {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+/* Full Cover */
+.divine-cover {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Aspect Ratios */
+.aspect-square { aspect-ratio: 1 / 1 !important; }
+.aspect-video { aspect-ratio: 16 / 9 !important; }
+.aspect-photo { aspect-ratio: 4 / 3 !important; }
+.aspect-portrait { aspect-ratio: 3 / 4 !important; }
+.aspect-golden { aspect-ratio: 1.618 / 1 !important; }
+
+/* Truncate Text */
+.divine-truncate {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+.divine-clamp-1 {
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 1 !important;
+  overflow: hidden !important;
+}
+
+.divine-clamp-2 {
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 2 !important;
+  overflow: hidden !important;
+}
+
+.divine-clamp-3 {
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 3 !important;
+  overflow: hidden !important;
+}
+
+/* Scrollbar Styling */
+.divine-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.divine-scrollbar::-webkit-scrollbar-track {
+  background: var(--ash-gray);
+  border-radius: var(--radius-md);
+}
+
+.divine-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--divine-flame);
+  border-radius: var(--radius-md);
+}
+
+.divine-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--sacred-copper);
+}
+
+/* ========================================
+   🔮 DIVINE PRINT UTILITIES
+   ======================================== */
+
+@media print {
+  .print\:divine-hidden { display: none !important; }
+  .print\:divine-block { display: block !important; }
+  .print\:divine-inline { display: inline !important; }
+  .print\:divine-inline-block { display: inline-block !important; }
+}
+
+/* ========================================
+   ♿ DIVINE ACCESSIBILITY UTILITIES
+   ======================================== */
+
+/* Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  .motion-safe\:animate-divine-pulse { animation: none !important; }
+  .motion-safe\:animate-divine-bounce { animation: none !important; }
+  .motion-safe\:animate-divine-spin { animation: none !important; }
+  .motion-safe\:transition-divine { transition: none !important; }
+}
+
+/* High Contrast */
+@media (prefers-contrast: high) {
+  .contrast\:divine-border { border: 2px solid currentColor !important; }
+  .contrast\:bg-white { background-color: white !important; }
+  .contrast\:bg-black { background-color: black !important; }
+  .contrast\:text-black { color: black !important; }
+  .contrast\:text-white { color: white !important; }
+}
+
+/* ========================================
+   🏁 DIVINE UTILITY OVERRIDE SAFETY
+   ======================================== */
+
+/* Force Important on all divine utilities */
+[class*="divine-"] {
+  /* Ensures divine utilities always take precedence */
+}
+
+/* Reset any conflicting framework styles */
+.divine-reset * {
+  all: unset;
+  display: revert;
+}
+
+/* End of Divine Utilities - Blessed by Quorra 🔥 */

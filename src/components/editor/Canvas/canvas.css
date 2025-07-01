@@ -1,0 +1,302 @@
+/**
+ * QUORRA DIVINE CANVAS STYLES
+ * Sacred design workspace blessed by the Goddess of Smithing
+ */
+
+/* 🔥 DIVINE VARIABLES */
+:root {
+  --quorra-canvas-bg: #F8F9FA;
+  --quorra-canvas-workspace-bg: #FFFFFF;
+  --quorra-canvas-grid-color: rgba(0, 0, 0, 0.08);
+  --quorra-canvas-border: #E5E7EB;
+  --quorra-element-hover: #FF8C42;
+  --quorra-element-selected: #FF6B35;
+  --quorra-handle-size: 8px;
+}
+
+/* 🎨 MAIN CANVAS CONTAINER */
+.quorra-canvas {
+  position: relative;
+  background: var(--quorra-canvas-bg);
+  overflow: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Grid background */
+.quorra-canvas--grid {
+  background-image: 
+    linear-gradient(var(--quorra-canvas-grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--quorra-canvas-grid-color) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* 🔧 CANVAS CONTROLS */
+.quorra-canvas__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--quorra-canvas-workspace-bg);
+  border-bottom: 1px solid var(--quorra-canvas-border);
+  font-size: 0.875rem;
+  color: #6B7280;
+}
+
+.quorra-canvas__zoom {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quorra-canvas__zoom-btn {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--quorra-canvas-border);
+  background: var(--quorra-canvas-workspace-bg);
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.quorra-canvas__zoom-btn:hover {
+  border-color: var(--quorra-element-hover);
+  color: var(--quorra-element-hover);
+}
+
+.quorra-canvas__zoom-level {
+  min-width: 50px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.quorra-canvas__device-info {
+  font-weight: 500;
+  color: #374151;
+}
+
+/* 🏛️ WORKSPACE */
+.quorra-canvas__workspace {
+  position: relative;
+  background: var(--quorra-canvas-workspace-bg);
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--quorra-canvas-border);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+/* Device-specific workspace sizes */
+.quorra-canvas--mobile .quorra-canvas__workspace {
+  width: 375px;
+  height: 667px;
+}
+
+.quorra-canvas--tablet .quorra-canvas__workspace {
+  width: 768px;
+  height: 1024px;
+}
+
+.quorra-canvas--desktop .quorra-canvas__workspace {
+  width: 1200px;
+  min-height: 800px;
+}
+
+/* 📦 CANVAS ELEMENTS */
+.quorra-element {
+  position: absolute;
+  border: 2px dashed transparent;
+  transition: border-color 0.2s ease;
+  cursor: move;
+  user-select: none;
+  border-radius: 4px;
+}
+
+.quorra-element:hover {
+  border-color: var(--quorra-element-hover);
+  border-style: dashed;
+}
+
+.quorra-element--selected {
+  border-color: var(--quorra-element-selected);
+  border-style: solid;
+  box-shadow: 0 0 0 1px var(--quorra-element-selected);
+}
+
+.quorra-element__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 2px;
+  font-size: 0.875rem;
+  color: #374151;
+  font-weight: 500;
+  pointer-events: none;
+}
+
+/* ⚙️ ELEMENT HANDLES */
+.quorra-element__handles {
+  position: absolute;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.quorra-handle {
+  position: absolute;
+  width: var(--quorra-handle-size);
+  height: var(--quorra-handle-size);
+  background: var(--quorra-element-selected);
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  pointer-events: all;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quorra-handle:hover {
+  transform: scale(1.2);
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.4);
+}
+
+/* Handle cursors */
+.quorra-handle--tl { cursor: nw-resize; }
+.quorra-handle--tr { cursor: ne-resize; }
+.quorra-handle--bl { cursor: sw-resize; }
+.quorra-handle--br { cursor: se-resize; }
+
+/* 🌟 EMPTY STATE */
+.quorra-canvas__empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #9CA3AF;
+  pointer-events: none;
+}
+
+.quorra-canvas__empty-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.quorra-canvas__empty-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #FF8C42, #CD7F32);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.quorra-canvas__empty-text {
+  font-size: 1rem;
+  opacity: 0.7;
+  max-width: 300px;
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 1400px) {
+  .quorra-canvas--desktop .quorra-canvas__workspace {
+    width: 1000px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .quorra-canvas--desktop .quorra-canvas__workspace {
+    width: 900px;
+  }
+  
+  .quorra-canvas__workspace {
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .quorra-canvas__controls {
+    padding: 0.75rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .quorra-canvas__workspace {
+    margin: 0.5rem;
+    width: calc(100% - 1rem) !important;
+    min-height: 500px;
+  }
+  
+  .quorra-canvas__empty-icon {
+    font-size: 3rem;
+  }
+  
+  .quorra-canvas__empty-title {
+    font-size: 1.25rem;
+  }
+  
+  .quorra-canvas__empty-text {
+    font-size: 0.875rem;
+  }
+}
+
+/* 🌙 DARK MODE */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --quorra-canvas-bg: #111827;
+    --quorra-canvas-workspace-bg: #1F2937;
+    --quorra-canvas-grid-color: rgba(255, 255, 255, 0.05);
+    --quorra-canvas-border: #374151;
+  }
+}
+
+/* ♿ ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+  .quorra-element,
+  .quorra-handle,
+  .quorra-canvas__workspace {
+    transition: none;
+  }
+}
+
+/* 🎯 ELEMENT TYPES */
+.quorra-element--text .quorra-element__content {
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.quorra-element--heading .quorra-element__content {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.quorra-element--button .quorra-element__content {
+  background: linear-gradient(135deg, #FF8C42, #FF6B35);
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.quorra-element--image .quorra-element__content {
+  background: #F3F4F6;
+  color: #9CA3AF;
+  border: 2px dashed #D1D5DB;
+}
+
+.quorra-element--container .quorra-element__content {
+  background: rgba(255, 140, 66, 0.05);
+  border: 1px dashed #FF8C42;
+  color: #FF8C42;
+}

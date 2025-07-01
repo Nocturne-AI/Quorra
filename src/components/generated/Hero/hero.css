@@ -1,0 +1,362 @@
+/**
+ * QUORRA DIVINE HERO COMPONENT STYLES
+ * Sacred hero section blessed by the Goddess of Smithing
+ */
+
+/* 🔥 DIVINE VARIABLES */
+:root {
+  --quorra-hero-overlay: rgba(26, 26, 26, 0.4);
+  --quorra-hero-text: #FFFFFF;
+  --quorra-hero-title-size: clamp(2.5rem, 5vw, 4rem);
+  --quorra-hero-subtitle-size: clamp(1.125rem, 2vw, 1.5rem);
+}
+
+/* 🏛️ MAIN HERO SECTION */
+.quorra-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1F2937 0%, #374151 100%);
+}
+
+/* 🎥 BACKGROUND VIDEO */
+.quorra-hero__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* 🌫️ OVERLAY */
+.quorra-hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--quorra-hero-overlay);
+  z-index: -1;
+}
+
+.quorra-hero--with-overlay .quorra-hero__overlay {
+  background: linear-gradient(
+    135deg, 
+    rgba(255, 140, 66, 0.2) 0%, 
+    rgba(26, 26, 26, 0.6) 100%
+  );
+}
+
+/* 📦 CONTAINER */
+.quorra-hero__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  z-index: 10;
+}
+
+/* 📝 CONTENT */
+.quorra-hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  animation: quorraHeroFadeIn 1s ease-out;
+}
+
+@keyframes quorraHeroFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 👑 TITLE */
+.quorra-hero__title {
+  font-size: var(--quorra-hero-title-size);
+  font-weight: 900;
+  line-height: 1.1;
+  margin: 0;
+  color: var(--quorra-hero-text);
+  background: linear-gradient(135deg, #FFFFFF, #FF8C42);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* 📝 SUBTITLE */
+.quorra-hero__subtitle {
+  font-size: var(--quorra-hero-subtitle-size);
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+}
+
+/* ⚡ ACTIONS */
+.quorra-hero__actions {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* 🔘 CTA BUTTONS */
+.quorra-hero__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  min-width: 160px;
+  text-align: center;
+}
+
+/* Primary CTA */
+.quorra-hero__cta--primary {
+  background: linear-gradient(135deg, #FF8C42, #FF6B35);
+  color: white;
+  box-shadow: 0 4px 20px rgba(255, 140, 66, 0.4);
+  border: 2px solid transparent;
+}
+
+.quorra-hero__cta--primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.6s ease;
+}
+
+.quorra-hero__cta--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(255, 140, 66, 0.6);
+}
+
+.quorra-hero__cta--primary:hover::before {
+  left: 100%;
+}
+
+/* Secondary CTA */
+.quorra-hero__cta--secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.quorra-hero__cta--secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 140, 66, 0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* 📍 TEXT ALIGNMENT */
+.quorra-hero--text-left .quorra-hero__content {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.quorra-hero--text-center .quorra-hero__content {
+  align-items: center;
+  text-align: center;
+}
+
+.quorra-hero--text-right .quorra-hero__content {
+  align-items: flex-end;
+  text-align: right;
+}
+
+/* 📐 CONTENT POSITION */
+.quorra-hero--content-top {
+  align-items: flex-start;
+  padding-top: 8rem;
+}
+
+.quorra-hero--content-center {
+  align-items: center;
+}
+
+.quorra-hero--content-bottom {
+  align-items: flex-end;
+  padding-bottom: 8rem;
+}
+
+/* ⌄ SCROLL INDICATOR */
+.quorra-hero__scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.quorra-scroll-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quorra-scroll-arrow:hover {
+  color: #FF8C42;
+  transform: translateY(5px);
+}
+
+.quorra-scroll-arrow span {
+  font-size: 1.5rem;
+  animation: quorraBounce 2s infinite;
+}
+
+@keyframes quorraBounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .quorra-hero {
+    min-height: 80vh;
+    padding: 4rem 0;
+  }
+
+  .quorra-hero__container {
+    padding: 0 1.5rem;
+  }
+
+  .quorra-hero__content {
+    gap: 1.5rem;
+  }
+
+  .quorra-hero__actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .quorra-hero__cta {
+    width: 100%;
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .quorra-hero__subtitle {
+    font-size: 1.125rem;
+  }
+
+  .quorra-hero__scroll-indicator {
+    bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quorra-hero__container {
+    padding: 0 1rem;
+  }
+
+  .quorra-hero__title {
+    font-size: 2rem;
+  }
+
+  .quorra-hero__subtitle {
+    font-size: 1rem;
+  }
+
+  .quorra-hero__cta {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9375rem;
+  }
+}
+
+/* 🌙 DARK MODE ADJUSTMENTS */
+@media (prefers-color-scheme: dark) {
+  .quorra-hero {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+  }
+
+  .quorra-hero__overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .quorra-hero--with-overlay .quorra-hero__overlay {
+    background: linear-gradient(
+      135deg, 
+      rgba(255, 140, 66, 0.15) 0%, 
+      rgba(0, 0, 0, 0.7) 100%
+    );
+  }
+}
+
+/* ♿ ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+  .quorra-hero__content,
+  .quorra-hero__cta,
+  .quorra-scroll-arrow {
+    animation: none;
+    transition: none;
+  }
+
+  .quorra-hero__cta:hover,
+  .quorra-scroll-arrow:hover {
+    transform: none;
+  }
+}
+
+/* 🎯 FOCUS STYLES */
+.quorra-hero__cta:focus {
+  outline: 2px solid #FF8C42;
+  outline-offset: 2px;
+}
+
+/* 📺 LARGE SCREENS */
+@media (min-width: 1400px) {
+  .quorra-hero__container {
+    max-width: 1400px;
+  }
+
+  .quorra-hero__content {
+    gap: 2.5rem;
+  }
+}
+
+/* 🎨 GRADIENT VARIANTS */
+.quorra-hero--gradient-fire {
+  background: linear-gradient(135deg, #FF8C42 0%, #FF6B35 50%, #CD7F32 100%);
+}
+
+.quorra-hero--gradient-night {
+  background: linear-gradient(135deg, #1A1A1A 0%, #2D1810 50%, #1A1A1A 100%);
+}
+
+.quorra-hero--gradient-dawn {
+  background: linear-gradient(135deg, #FF8C42 0%, #F5DEB3 50%, #CD7F32 100%);
+}

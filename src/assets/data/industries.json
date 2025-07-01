@@ -1,0 +1,837 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-07-01",
+    "totalIndustries": 16,
+    "generator": "QUORRA Divine Intelligence System",
+    "blessed": "By the Goddess of Smithing 🔥"
+  },
+  "industries": {
+    "healthcare": {
+      "id": "healthcare",
+      "name": "Healthcare & Medical",
+      "category": "Professional Services",
+      "description": "Medical practices, clinics, hospitals, telehealth, wellness centers",
+      "conversionPsychology": {
+        "journey": ["Need", "Trust", "Care", "Ongoing Relationship"],
+        "primaryGoal": "appointment_booking",
+        "trustFactors": ["credentials", "patient_testimonials", "licensing", "compassionate_care"],
+        "emotionalTriggers": ["safety", "care", "expertise", "accessibility"]
+      },
+      "designPatterns": {
+        "colorPalette": {
+          "primary": "#2563EB",
+          "secondary": "#FFBE98",
+          "accent": "#16A34A",
+          "neutral": "#6B7280",
+          "background": "#F8FAFC",
+          "psychology": "Trust blues + healing peaches for compassionate authority"
+        },
+        "typography": {
+          "heading": "Inter",
+          "body": "Open Sans",
+          "accent": "Lato",
+          "personality": "trustworthy_professional"
+        },
+        "photography": "Doctor-patient interactions, clean clinical environments, diverse representation",
+        "navigation": ["Home", "Services", "Doctors", "Appointments", "Contact"],
+        "ctaLanguage": ["Book Appointment", "Schedule Now", "Request Consultation", "Learn More"]
+      },
+      "requiredElements": {
+        "credentialing": true,
+        "hipaaCompliance": true,
+        "appointmentBooking": true,
+        "patientPortal": true,
+        "accessibility": "wcag2.1",
+        "mobileOptimized": true
+      },
+      "contentStrategy": {
+        "tone": "compassionate_professional",
+        "messaging": "Blend medical authority with empathetic patient care",
+        "trustSignals": ["MD credentials", "board certifications", "patient ratings", "testimonials"],
+        "educationalContent": true,
+        "emergencyInfo": true
+      },
+      "seoKeywords": ["doctor", "medical care", "health clinic", "appointment", "telehealth", "medical practice"],
+      "competitors": ["WebMD", "Mayo Clinic", "local medical practices"],
+      "regulations": ["HIPAA", "ADA compliance", "medical advertising guidelines"]
+    },
+    "technology": {
+      "id": "technology",
+      "name": "Technology & SaaS",
+      "category": "Software & Digital",
+      "description": "Software companies, SaaS platforms, tech startups, digital tools",
+      "conversionPsychology": {
+        "journey": ["Discovery", "Trial", "Adoption", "Subscription"],
+        "primaryGoal": "free_trial_signup",
+        "trustFactors": ["product_demos", "user_metrics", "integration_logos", "security_badges"],
+        "emotionalTriggers": ["innovation", "efficiency", "growth", "competitive_advantage"]
+      },
+      "designPatterns": {
+        "colorPalette": {
+          "primary": "#6366F1",
+          "secondary": "#06B6D4",
+          "accent": "#F59E0B",
+          "neutral": "#374151",
+          "background": "#FFFFFF",
+          "psychology": "Innovation purples + trust blues for tech-forward reliability"
+        },
+        "typography": {
+          "heading": "Inter",
+          "body": "Roboto",
+          "accent": "Space Mono",
+          "personality": "innovative_professional"
+        },
+        "photography": "UI screenshots, dashboard mockups, team collaboration, diverse tech workers",
+        "navigation": ["Home", "Features", "Pricing", "Docs", "Login"],
+        "ctaLanguage": ["Start Free Trial", "Get Started", "Try Now", "Watch Demo", "Sign Up"]
+      },
+      "requiredElements": {
+        "productDemo": true,
+        "pricingTiers": true,
+        "documentation": true,
+        "apiAccess": true,
+        "securityInfo": true,
+        "integrations": true
+      },
+      "contentStrategy": {
+        "tone": "innovative_confident",
+        "messaging": "Emphasize innovation, efficiency, and competitive advantage",
+        "trustSignals": ["user testimonials", "company logos", "uptime stats", "security certifications"],
+        "technicalContent": true,
+        "caseStudies": true
+      },
+      "seoKeywords": ["software", "SaaS", "platform", "API", "automation", "productivity", "dashboard"],
+      "competitors": ["Slack", "Notion", "Figma", "major SaaS platforms"],
+      "regulations": ["GDPR", "SOC2", "data privacy", "security compliance"]
+    },
+    "restaurant": {
+      "id": "restaurant",
+      "name": "Restaurant & Food Service",
+      "category": "Hospitality & Food",
+      "description": "Restaurants, cafes, catering, food trucks, bars, fine dining",
+      "conversionPsychology": {
+        "journey": ["Appetite", "Menu Browse", "Reservation", "Visit"],
+        "primaryGoal": "reservation_or_order",
+        "trustFactors": ["food_photography", "reviews", "chef_credentials", "atmosphere"],
+        "emotionalTriggers": ["appetite", "experience", "comfort", "social_connection"]
+      },
+      "designPatterns": {
+        "colorPalette": {
+          "primary": "#92400E",
+          "secondary": "#F97316",
+          "accent": "#EAB308",
+          "neutral": "#78716C",
+          "background": "#FDF4DC",
+          "psychology": "Warm browns + appetite oranges for comfort and hunger stimulation"
+        },
+        "typography": {
+          "heading": "Playfair Display",
+          "body": "Crimson Text",
+          "accent": "Inter",
+          "personality": "warm_elegant"
+        },
+        "photography": "Professional food photography, dining atmosphere, chef portraits, ingredients",
+        "navigation": ["Home", "Menu", "Reservations", "About", "Contact"],
+        "ctaLanguage": ["Reserve Table", "Order Now", "View Menu", "Book Now", "Call Us"]
+      },
+      "requiredElements": {
+        "menuIntegration": true,
+        "reservationSystem": true,
+        "locationHours": true,
+        "onlineOrdering": false,
+        "galleryPhotos": true,
+        "socialMedia": true
+      },
+      "contentStrategy": {
+        "tone": "warm_inviting",
+        "messaging": "Focus on experience, quality, and atmosphere",
+        "trustSignals": ["customer reviews", "chef background", "awards", "fresh ingredients"],
+        "menuHighlights": true,
+        "storyTelling": true
+      },
+      "seoKeywords": ["restaurant", "dining", "menu", "reservations", "food", "cuisine", "local dining"],
+      "competitors": ["OpenTable", "Yelp", "local restaurants"],
+      "regulations": ["health department", "liquor license", "ADA compliance"]
+    },
+    "ecommerce": {
+      "id": "ecommerce",
+      "name": "E-commerce & Retail",
+      "category": "Commerce & Sales",
+      "description": "Online stores, retail brands, product sales, marketplaces",
+      "conversionPsychology": {
+        "journey": ["Browse", "Compare", "Purchase", "Return"],
+        "primaryGoal": "product_purchase",
+        "trustFactors": ["product_reviews", "return_policy", "security_badges", "shipping_info"],
+        "emotionalTriggers": ["desire", "value", "convenience", "social_proof"]
+      },
+      "designPatterns": {
+        "colorPalette": {
+          "primary": "#DC2626",
+          "secondary": "#059669",
+          "accent": "#F59E0B",
+          "neutral": "#374151",
+          "background": "#FFFFFF",
+          "psychology": "Action reds + trust greens for conversion optimization"
+        },
+        "typography": {
+          "heading": "Inter",
+          "body": "Open Sans",
+          "accent": "Montserrat",
+          "personality": "clean_trustworthy"
+        },
+        "photography": "High-quality product shots, lifestyle imagery, model photography, detail shots",
+        "navigation": ["Home", "Shop", "Categories", "About", "Contact", "Cart"],
+        "ctaLanguage": ["Add to Cart", "Buy Now", "Shop Now", "View Product", "Get Yours"]
+      },
+      "requiredElements": {
+        "productCatalog": true,
+        "shoppingCart": true,
+        "checkoutProcess": true,
+        "paymentGateway": true,
+        "searchFilter": true,
+        "userAccounts": true
+      },
+      "contentStrategy": {
+        "tone": "confident_helpful",
+        "messaging": "Emphasize value, quality, and customer satisfaction",
+        "trustSignals": ["customer reviews", "return policy", "security badges", "testimonials"],
+        "productDescriptions": true,
+        "socialProof": true
+      },
+      "seoKeywords": ["buy", "shop", "products", "online store", "deals", "free shipping"],
+      "competitors": ["Amazon", "Shopify stores", "category-specific retailers"],
+      "regulations": ["consumer protection", "data privacy", "payment processing", "tax compliance"]
+    },
+    "professional_services": {
+      "id": "professional_services",
+      "name": "Professional Services",
+      "category": "Professional Services",
+      "description": "Law firms, accounting, consulting, financial advisory, insurance",
+      "conversionPsychology": {
+        "journey": ["Need", "Research", "Consultation", "Engagement"],
+        "primaryGoal": "consultation_request",
+        "trustFactors": ["credentials", "experience", "case_studies", "testimonials"],
+        "emotionalTriggers": ["authority", "expertise", "results", "peace_of_mind"]
+      },
+      "designPatterns": {
+        "colorPalette": {
+          "primary": "#1E40AF",
+          "secondary": "#6B7280",
+          "accent": "#059669",
+          "neutral": "#374151",
+          "background": "#F9FAFB",
+          "psychology": "Authority blues + professional grays for credibility"
+        },
+        "typography": {
+          "heading": "EB Garamond",
+          "body": "Source Sans Pro",
+          "accent": "Inter",
+          "personality": "authoritative_traditional"
+        },
+        "photography": "Professional portraits, office environments, handshakes, documents",
+        "navigation": ["Home", "Services", "About", "Team", "Contact"],
+        "ctaLanguage": ["Schedule Consultation", "Contact Us", "Learn More", "Get Started"]
+      },
+      "requiredElements": {
+        "teamProfiles": true,
+        "serviceDescriptions": true,
+        "caseStudies": true,
+        "contactForms": true,
+        "credentials": true,
+        "testimonials": true
+      },
+      "contentStrategy": {
+        "tone": "professional_authoritative",
+        "messaging": "Establish expertise, build trust, demonstrate results",
+        "trustSignals": ["years of experience", "certifications", "awards", "client testimonials"],
+        "thoughtLeadership": true,
+        "caseStudies": true
+      },
+      "seoKeywords": ["lawyer", "attorney", "consultant", "advisor", "professional", "services"],
+      "competitors": ["other professional service firms", "legal directories", "consulting firms"],
+      "regulations": ["professional licensing", "client confidentiality", "advertising ethics"]
+    },
+    "real_estate": {
+      "id": "real_estate",
+      "name": "Real Estate",
+      "category": "Property & Real Estate",
+      "description": "Real estate agents, brokers, property management, home sales",
+      "conversionPsychology": {
+        "journey": ["Browse", "Visualize", "Connect", "Transact"],
+        "primaryGoal": "lead_generation",
+        "trustFactors": ["property_photos", "agent_credentials", "market_data", "testimonials"],
+        "emotionalTriggers": ["aspiration", "security", "investment", "lifestyle"]
+      },
+      "designPatterns": {
+        "colorPalette": {
+          "primary": "#1F2937",
+          "secondary": "#D97706",
+          "accent": "#059669",
+          "neutral": "#6B7280",
+          "background": "#F9FAFB",
+          "psychology": "Luxury blacks + gold accents for premium property positioning"
+        },
+        "typography": {
+          "heading": "Inter",
+          "body": "Open Sans",
+          "accent": "Playfair Display",
+          "personality": "professional_luxurious"
+        },
+        "photography": "High-quality property photos, virtual tours, lifestyle shots, agent portraits",
+        "navigation": ["Home", "Properties", "Buy", "Sell", "About", "Contact"],
+        "ctaLanguage": ["View Properties", "Schedule Tour", "Contact Agent", "Get Estimate"]
+      },
+      "requiredElements": {
+        "propertySearch": true,
+        "photoGalleries": true,
+        "virtualTours": true,
+        "agentProfiles": true,
+        "leadCapture": true,
+        "marketData": true
+      },
+      "contentStrategy": {
+        "tone": "professional_aspirational",
+        "messaging": "Emphasize lifestyle, investment value, and local expertise",
+        "trustSignals": ["sales volume", "years of experience", "client testimonials", "market awards"],
+        "localExpertise": true,
+        "marketInsights": true
+      },
+      "seoKeywords": ["homes for sale", "real estate", "property", "agent", "buy house", "sell house"],
+      "competitors": ["Zillow", "Realtor.com", "local real estate agents"],
+      "regulations": ["real estate licensing", "fair housing", "disclosure requirements"]
+    },
+    "nonprofit": {
+      "id": "nonprofit",
+      "name": "Non-Profit Organizations",
+      "category": "Non-Profit & Advocacy",
+      "description": "Charities, foundations, advocacy groups, social causes",
+      "conversionPsychology": {
+        "journey": ["Discover", "Connect", "Act", "Sustain"],
+        "primaryGoal": "donation_or_volunteer",
+        "trustFactors": ["impact_metrics", "transparency", "testimonials", "endorsements"],
+        "emotionalTriggers": ["empathy", "purpose", "community", "change"]
+      },
+      "designPatterns": {
+        "colorPalette": {
+          "primary": "#059669",
+          "secondary": "#DC2626",
+          "accent": "#F59E0B",
+          "neutral": "#374151",
+          "background": "#F9FAFB",
+          "psychology": "Hope greens + compassion colors for emotional connection"
+        },
+        "typography": {
+          "heading": "Inter",
+          "body": "Open Sans",
+          "accent": "Crimson Text",
+          "personality": "warm_trustworthy"
+        },
+        "photography": "Human faces, community impact, volunteers in action, beneficiaries",
+        "navigation": ["Home", "About", "Causes", "Donate", "Volunteer", "Contact"],
+        "ctaLanguage": ["Donate Now", "Get Involved", "Join Us", "Volunteer", "Support"]
+      },
+      "requiredElements": {
+        "donationSystem": true,
+        "volunteerSignup": true,
+        "impactMetrics": true,
+        "storyTelling": true,
+        "transparency": true,
+        "accessibility": true
+      },
+      "contentStrategy": {
+        "tone": "compassionate_urgent",
+        "messaging": "Focus on impact, transparency, and community",
+        "trustSignals": ["impact statistics", "financial transparency", "endorsements", "success stories"],
+        "storyTelling": true,
+        "callToAction": true
+      },
+      "seoKeywords": ["donate", "charity", "non-profit", "volunteer", "help", "cause", "foundation"],
+      "competitors": ["other non-profits", "charity platforms", "crowdfunding sites"],
+      "regulations": ["501(c)(3) compliance", "donor privacy", "financial reporting"]
+    },
+    "education": {
+      "id": "education",
+      "name": "Educational Institutions",
+      "category": "Education & Learning",
+      "description": "Schools, universities, training centers, online courses",
+      "conversionPsychology": {
+        "journey": ["Explore", "Evaluate", "Apply", "Enroll"],
+        "primaryGoal": "application_or_enrollment",
+        "trustFactors": ["accreditation", "faculty", "outcomes", "alumni"],
+        "emotionalTriggers": ["achievement", "opportunity", "growth", "future"]
+      },
+      "designPatterns": {
+        "colorPalette": {
+          "primary": "#1E40AF",
+          "secondary": "#DC2626",
+          "accent": "#059669",
+          "neutral": "#374151",
+          "background": "#F9FAFB",
+          "psychology": "Academic blues + institutional reds for educational authority"
+        },
+        "typography": {
+          "heading": "Inter",
+          "body": "Open Sans",
+          "accent": "EB Garamond",
+          "personality": "academic_authoritative"
+        },
+        "photography": "Campus scenes, students learning, faculty portraits, graduation ceremonies",
+        "navigation": ["Home", "Programs", "Admissions", "Student Life", "About", "Contact"],
+        "ctaLanguage": ["Apply Now", "Learn More", "Schedule Visit", "Request Info"]
+      },
+      "requiredElements": {
+        "programCatalog": true,
+        "admissionsInfo": true,
+        "facultyProfiles": true,
+        "studentPortal": true,
+        "campusInfo": true,
+        "testimonials": true
+      },
+      "contentStrategy": {
+        "tone": "inspiring_authoritative",
+        "messaging": "Emphasize outcomes, opportunity, and institutional excellence",
+        "trustSignals": ["accreditation", "rankings", "alumni success", "faculty credentials"],
+        "programHighlights": true,
+        "successStories": true
+      },
+      "seoKeywords": ["university", "college", "education", "degree", "courses", "admissions"],
+      "competitors": ["other educational institutions", "online learning platforms"],
+      "regulations": ["accreditation standards", "student privacy", "ADA compliance"]
+    },
+    "finance": {
+      "id": "finance",
+      "name": "Financial Services",
+      "category": "Finance & Banking",
+      "description": "Banks, investment firms, insurance, financial planning",
+      "conversionPsychology": {
+        "journey": ["Research", "Evaluate", "Trust", "Engage"],
+        "primaryGoal": "consultation_or_signup",
+        "trustFactors": ["credentials", "security", "performance", "testimonials"],
+        "emotionalTriggers": ["security", "growth", "stability", "prosperity"]
+      },
+      "designPatterns": {
+        "colorPalette": {
+          "primary": "#1E40AF",
+          "secondary": "#6B7280",
+          "accent": "#059669",
+          "neutral": "#374151",
+          "background": "#F9FAFB",
+          "psychology": "Trust blues + stability grays for financial confidence"
+        },
+        "typography": {
+          "heading": "EB Garamond",
+          "body": "Source Sans Pro",
+          "accent": "Inter",
+          "personality": "traditional_stable"
+        },
+        "photography": "Professional portraits, handshakes, financial documents, office environments",
+        "navigation": ["Home", "Services", "About", "Resources", "Contact"],
+        "ctaLanguage": ["Schedule Consultation", "Get Quote", "Learn More", "Contact Advisor"]
+      },
+      "requiredElements": {
+        "serviceDescriptions": true,
+        "advisorProfiles": true,
+        "securityInfo": true,
+        "compliance": true,
+        "calculators": true,
+        "testimonials": true
+      },
+      "contentStrategy": {
+        "tone": "professional_trustworthy",
+        "messaging": "Emphasize security, expertise, and long-term value",
+        "trustSignals": ["certifications", "years of experience", "security measures", "performance data"],
+        "educationalContent": true,
+        "riskDisclosures": true
+      },
+      "seoKeywords": ["financial advisor", "investment", "insurance", "retirement", "banking"],
+      "competitors": ["banks", "investment firms", "financial advisors"],
+      "regulations": ["SEC compliance", "FINRA", "state insurance regulations", "privacy laws"]
+    },
+    "fitness": {
+      "id": "fitness",
+      "name": "Fitness & Wellness",
+      "category": "Health & Fitness",
+      "description": "Gyms, personal trainers, yoga studios, wellness centers",
+      "conversionPsychology": {
+        "journey": ["Motivate", "Inspire", "Trial", "Transform"],
+        "primaryGoal": "membership_or_trial",
+        "trustFactors": ["transformations", "trainer_credentials", "community", "results"],
+        "emotionalTriggers": ["motivation", "transformation", "community", "health"]
+      },
+      "designPatterns": {
+        "colorPalette": {
+          "primary": "#DC2626",
+          "secondary": "#059669",
+          "accent": "#F59E0B",
+          "neutral": "#374151",
+          "background": "#F9FAFB",
+          "psychology": "Energy reds + health greens for motivation and vitality"
+        },
+        "typography": {
+          "heading": "Inter",
+          "body": "Open Sans",
+          "accent": "Montserrat",
+          "personality": "energetic_motivating"
+        },
+        "photography": "Action shots, before/after transformations, group classes, equipment",
+        "navigation": ["Home", "Classes", "Trainers", "Membership", "About", "Contact"],
+        "ctaLanguage": ["Start Free Trial", "Join Now", "Book Class", "Get Started"]
+      },
+      "requiredElements": {
+        "classSchedules": true,
+        "trainerProfiles": true,
+        "membershipOptions": true,
+        "transformations": true,
+        "trialOffers": true,
+        "community": true
+      },
+      "contentStrategy": {
+        "tone": "energetic_supportive",
+        "messaging": "Focus on transformation, community, and personal achievement",
+        "trustSignals": ["success stories", "trainer certifications", "member testimonials", "before/after photos"],
+        "motivationalContent": true,
+        "communityBuilding": true
+      },
+      "seoKeywords": ["gym", "fitness", "personal trainer", "yoga", "wellness", "workout"],
+      "competitors": ["local gyms", "fitness franchises", "online fitness platforms"],
+      "regulations": ["health department", "safety standards", "liability insurance"]
+    },
+    "event_planning": {
+      "id": "event_planning",
+      "name": "Event & Wedding Planning",
+      "category": "Events & Entertainment",
+      "description": "Wedding planners, event coordinators, party planning, venues",
+      "conversionPsychology": {
+        "journey": ["Dream", "Inspire", "Plan", "Book"],
+        "primaryGoal": "consultation_booking",
+        "trustFactors": ["portfolio", "testimonials", "vendor_network", "experience"],
+        "emotionalTriggers": ["aspiration", "perfection", "memories", "celebration"]
+      },
+      "designPatterns": {
+        "colorPalette": {
+          "primary": "#BE185D",
+          "secondary": "#F59E0B",
+          "accent": "#059669",
+          "neutral": "#6B7280",
+          "background": "#FDF2F8",
+          "psychology": "Elegant magentas + celebration golds for romance and luxury"
+        },
+        "typography": {
+          "heading": "Playfair Display",
+          "body": "Crimson Text",
+          "accent": "Inter",
+          "personality": "elegant_romantic"
+        },
+        "photography": "Event galleries, romantic settings, floral arrangements, celebrations",
+        "navigation": ["Home", "Portfolio", "Services", "About", "Contact"],
+        "ctaLanguage": ["Schedule Consultation", "View Portfolio", "Plan Your Event", "Contact Us"]
+      },
+      "requiredElements": {
+        "portfolioGallery": true,
+        "servicePackages": true,
+        "testimonials": true,
+        "vendorNetwork": true,
+        "consultationBooking": true,
+        "seasonalContent": true
+      },
+      "contentStrategy": {
+        "tone": "elegant_inspiring",
+        "messaging": "Focus on creating perfect moments and unforgettable experiences",
+        "trustSignals": ["portfolio quality", "client testimonials", "vendor relationships", "awards"],
+        "inspirationalContent": true,
+        "seasonalMarketing": true
+      },
+      "seoKeywords": ["wedding planner", "event planning", "party planning", "venue", "coordinator"],
+      "competitors": ["other event planners", "venues", "wedding websites"],
+      "regulations": ["business licensing", "vendor insurance", "contract law"]
+    },
+    "elearning": {
+      "id": "elearning",
+      "name": "E-Learning & Online Courses",
+      "category": "Education & Learning",
+      "description": "Online course platforms, training programs, educational content",
+      "conversionPsychology": {
+        "journey": ["Explore", "Sample", "Enroll", "Complete"],
+        "primaryGoal": "course_enrollment",
+        "trustFactors": ["instructor_credentials", "student_outcomes", "course_previews", "certifications"],
+        "emotionalTriggers": ["growth", "skills", "career_advancement", "achievement"]
+      },
+      "designPatterns": {
+        "colorPalette": {
+          "primary": "#7C3AED",
+          "secondary": "#059669",
+          "accent": "#F59E0B",
+          "neutral": "#374151",
+          "background": "#F9FAFB",
+          "psychology": "Learning purples + growth greens for education and progress"
+        },
+        "typography": {
+          "heading": "Inter",
+          "body": "Open Sans",
+          "accent": "Source Code Pro",
+          "personality": "modern_educational"
+        },
+        "photography": "Students learning, instructor portraits, course completion celebrations, skill demonstrations",
+        "navigation": ["Home", "Courses", "Instructors", "About", "Login"],
+        "ctaLanguage": ["Enroll Now", "Start Learning", "Try Free", "View Course", "Get Certificate"]
+      },
+      "requiredElements": {
+        "courseCatalog": true,
+        "instructorProfiles": true,
+        "studentPortal": true,
+        "progressTracking": true,
+        "certificates": true,
+        "communityFeatures": true
+      },
+      "contentStrategy": {
+        "tone": "encouraging_expert",
+        "messaging": "Emphasize skill development, career advancement, and learning outcomes",
+        "trustSignals": ["instructor credentials", "student success stories", "completion rates", "employer recognition"],
+        "skillBasedContent": true,
+        "careerFocused": true
+      },
+      "seoKeywords": ["online courses", "e-learning", "training", "certification", "skills", "education"],
+      "competitors": ["Coursera", "Udemy", "educational platforms"],
+      "regulations": ["educational standards", "accessibility compliance", "student privacy"]
+    },
+    "marketplace": {
+      "id": "marketplace",
+      "name": "Multi-Vendor Marketplace",
+      "category": "Commerce & Platforms",
+      "description": "Online marketplaces, multi-vendor platforms, digital marketplaces",
+      "conversionPsychology": {
+        "journey": ["Browse", "Compare", "Verify", "Purchase"],
+        "primaryGoal": "transaction_completion",
+        "trustFactors": ["vendor_ratings", "buyer_protection", "reviews", "secure_payments"],
+        "emotionalTriggers": ["choice", "value", "convenience", "discovery"]
+      },
+      "designPatterns": {
+        "colorPalette": {
+          "primary": "#059669",
+          "secondary": "#DC2626",
+          "accent": "#F59E0B",
+          "neutral": "#374151",
+          "background": "#F9FAFB",
+          "psychology": "Trust greens + action reds for secure marketplace transactions"
+        },
+        "typography": {
+          "heading": "Inter",
+          "body": "Open Sans",
+          "accent": "Roboto",
+          "personality": "clean_trustworthy"
+        },
+        "photography": "Product catalogs, vendor diversity, satisfied customers, global shipping",
+        "navigation": ["Home", "Categories", "Vendors", "Deals", "Account"],
+        "ctaLanguage": ["Shop Now", "Compare Prices", "Buy From Vendor", "Add to Cart", "Sell on Platform"]
+      },
+      "requiredElements": {
+        "vendorProfiles": true,
+        "productSearch": true,
+        "ratingSystem": true,
+        "paymentProcessing": true,
+        "disputeResolution": true,
+        "buyerProtection": true
+      },
+      "contentStrategy": {
+        "tone": "helpful_trustworthy",
+        "messaging": "Emphasize choice, value, and secure transactions",
+        "trustSignals": ["vendor verification", "buyer protection", "secure payments", "dispute resolution"],
+        "categoryContent": true,
+        "vendorSpotlights": true
+      },
+      "seoKeywords": ["marketplace", "buy online", "compare prices", "vendors", "products", "deals"],
+      "competitors": ["Amazon", "eBay", "Etsy", "specialized marketplaces"],
+      "regulations": ["e-commerce regulations", "consumer protection", "payment processing", "international trade"]
+    },
+    "consulting": {
+      "id": "consulting",
+      "name": "B2B Consulting & Agencies",
+      "category": "Business Services",
+      "description": "Business consulting, marketing agencies, strategy firms, B2B services",
+      "conversionPsychology": {
+        "journey": ["Research", "Evaluate", "Validate", "Engage"],
+        "primaryGoal": "lead_generation",
+        "trustFactors": ["case_studies", "client_logos", "expertise", "results"],
+        "emotionalTriggers": ["growth", "expertise", "results", "partnership"]
+      },
+      "designPatterns": {
+        "colorPalette": {
+          "primary": "#1F2937",
+          "secondary": "#059669",
+          "accent": "#F59E0B",
+          "neutral": "#6B7280",
+          "background": "#F9FAFB",
+          "psychology": "Professional grays + growth greens for business authority"
+        },
+        "typography": {
+          "heading": "Inter",
+          "body": "Open Sans",
+          "accent": "EB Garamond",
+          "personality": "professional_results_focused"
+        },
+        "photography": "Professional team shots, client meetings, data visualizations, business environments",
+        "navigation": ["Home", "Services", "Case Studies", "About", "Contact"],
+        "ctaLanguage": ["Schedule Discovery Call", "Get Proposal", "Learn More", "Contact Us"]
+      },
+      "requiredElements": {
+        "caseStudies": true,
+        "teamProfiles": true,
+        "clientLogos": true,
+        "serviceOfferings": true,
+        "thoughtLeadership": true,
+        "contactForms": true
+      },
+      "contentStrategy": {
+        "tone": "expert_results_focused",
+        "messaging": "Emphasize expertise, proven results, and strategic partnership",
+        "trustSignals": ["case studies", "client testimonials", "industry awards", "thought leadership"],
+        "industryExpertise": true,
+        "thoughtLeadership": true
+      },
+      "seoKeywords": ["consulting", "business strategy", "marketing agency", "B2B services", "expert"],
+      "competitors": ["consulting firms", "agencies", "freelancers"],
+      "regulations": ["business licensing", "professional liability", "client confidentiality"]
+    },
+    "local_services": {
+      "id": "local_services",
+      "name": "Local Service Businesses",
+      "category": "Local Services",
+      "description": "Plumbers, electricians, contractors, repair services, home services",
+      "conversionPsychology": {
+        "journey": ["Problem", "Trust", "Book", "Service"],
+        "primaryGoal": "service_booking",
+        "trustFactors": ["licensing", "reviews", "local_presence", "emergency_availability"],
+        "emotionalTriggers": ["urgency", "reliability", "local_trust", "problem_solving"]
+      },
+      "designPatterns": {
+        "colorPalette": {
+          "primary": "#1E40AF",
+          "secondary": "#F59E0B",
+          "accent": "#DC2626",
+          "neutral": "#374151",
+          "background": "#F9FAFB",
+          "psychology": "Trust blues + urgent oranges for reliable local service"
+        },
+        "typography": {
+          "heading": "Inter",
+          "body": "Open Sans",
+          "accent": "Roboto",
+          "personality": "trustworthy_reliable"
+        },
+        "photography": "Workers in action, service trucks, before/after shots, local community",
+        "navigation": ["Home", "Services", "About", "Reviews", "Contact"],
+        "ctaLanguage": ["Call Now", "Book Service", "Get Estimate", "Emergency Service", "Schedule"]
+      },
+      "requiredElements": {
+        "serviceAreas": true,
+        "emergencyContact": true,
+        "licensing": true,
+        "reviews": true,
+        "estimateRequest": true,
+        "beforeAfterGallery": true
+      },
+      "contentStrategy": {
+        "tone": "reliable_local",
+        "messaging": "Emphasize local expertise, reliability, and prompt service",
+        "trustSignals": ["licensing", "insurance", "local testimonials", "years of service"],
+        "localSEO": true,
+        "serviceEducation": true
+      },
+      "seoKeywords": ["local service", "repair", "contractor", "emergency", "licensed", "insured"],
+      "competitors": ["local competitors", "service marketplaces", "franchise operations"],
+      "regulations": ["licensing requirements", "insurance", "local permits", "safety standards"]
+    },
+    "creative": {
+      "id": "creative",
+      "name": "Creative & Personal Brand",
+      "category": "Creative Services",
+      "description": "Artists, designers, photographers, writers, creative professionals",
+      "conversionPsychology": {
+        "journey": ["Discover", "Engage", "Follow", "Hire"],
+        "primaryGoal": "audience_building",
+        "trustFactors": ["portfolio", "style", "personality", "testimonials"],
+        "emotionalTriggers": ["inspiration", "creativity", "authenticity", "connection"]
+      },
+      "designPatterns": {
+        "colorPalette": {
+          "primary": "#7C3AED",
+          "secondary": "#BE185D",
+          "accent": "#F59E0B",
+          "neutral": "#6B7280",
+          "background": "#F5F5DC",
+          "psychology": "Creative purples + warm neutrals for artistic expression"
+        },
+        "typography": {
+          "heading": "Playfair Display",
+          "body": "Crimson Text",
+          "accent": "Inter",
+          "personality": "creative_authentic"
+        },
+        "photography": "Portfolio pieces, creative process, personal branding, artistic lifestyle",
+        "navigation": ["Home", "Portfolio", "About", "Blog", "Contact"],
+        "ctaLanguage": ["View Portfolio", "Follow", "Subscribe", "Hire Me", "Let's Collaborate"]
+      },
+      "requiredElements": {
+        "portfolioGallery": true,
+        "personalStory": true,
+        "blogContent": true,
+        "socialMedia": true,
+        "contactForm": true,
+        "testimonials": true
+      },
+      "contentStrategy": {
+        "tone": "authentic_creative",
+        "messaging": "Showcase personality, creativity, and unique artistic vision",
+        "trustSignals": ["portfolio quality", "client testimonials", "creative process", "artistic journey"],
+        "personalBranding": true,
+        "storytelling": true
+      },
+      "seoKeywords": ["artist", "designer", "photographer", "creative", "portfolio", "freelance"],
+      "competitors": ["other creatives", "stock platforms", "creative marketplaces"],
+      "regulations": ["copyright", "intellectual property", "business licensing", "contract law"]
+    }
+  },
+  "relationships": {
+    "similar_psychology": {
+      "trust_based": ["healthcare", "finance", "professional_services", "local_services"],
+      "aspiration_driven": ["real_estate", "event_planning", "creative", "fitness"],
+      "efficiency_focused": ["technology", "ecommerce", "marketplace", "consulting"],
+      "community_oriented": ["nonprofit", "education", "fitness", "restaurant"]
+    },
+    "conversion_patterns": {
+      "immediate_action": ["restaurant", "local_services", "ecommerce"],
+      "research_heavy": ["professional_services", "finance", "real_estate", "consulting"],
+      "trial_based": ["technology", "elearning", "fitness"],
+      "relationship_building": ["creative", "nonprofit", "education"]
+    },
+    "design_families": {
+      "corporate_professional": ["finance", "consulting", "professional_services"],
+      "warm_inviting": ["restaurant", "nonprofit", "healthcare"],
+      "clean_modern": ["technology", "ecommerce", "marketplace"],
+      "creative_expressive": ["creative", "event_planning", "fitness"]
+    }
+  },
+  "market_segments": {
+    "luxury": {
+      "industries": ["real_estate", "event_planning", "professional_services"],
+      "design_emphasis": "premium materials, sophisticated typography, ample white space",
+      "trust_factors": "exclusivity, heritage, craftsmanship"
+    },
+    "budget": {
+      "industries": ["ecommerce", "local_services", "marketplace"],
+      "design_emphasis": "clear navigation, prominent pricing, efficiency",
+      "trust_factors": "value, transparency, practical benefits"
+    },
+    "tech_forward": {
+      "industries": ["technology", "elearning", "consulting"],
+      "design_emphasis": "innovative interfaces, data visualization, progressive features",
+      "trust_factors": "innovation, efficiency, scalability"
+    },
+    "community_focused": {
+      "industries": ["nonprofit", "education", "fitness", "healthcare"],
+      "design_emphasis": "human photography, testimonials, community features",
+      "trust_factors": "social proof, impact, accessibility"
+    }
+  }
+}

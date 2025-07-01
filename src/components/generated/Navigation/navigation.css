@@ -1,0 +1,420 @@
+/**
+ * QUORRA DIVINE NAVIGATION STYLES
+ * Sacred website navigation blessed by the Goddess of Smithing
+ */
+
+/* 🔥 DIVINE VARIABLES */
+:root {
+  --quorra-nav-height: 70px;
+  --quorra-nav-bg: rgba(255, 255, 255, 0.95);
+  --quorra-nav-border: rgba(229, 231, 235, 0.8);
+  --quorra-nav-text: #374151;
+  --quorra-nav-text-hover: #FF8C42;
+  --quorra-nav-active: #FF8C42;
+  --quorra-nav-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --quorra-nav-backdrop: blur(10px);
+}
+
+/* 🧭 MAIN NAVIGATION */
+.quorra-nav {
+  width: 100%;
+  height: var(--quorra-nav-height);
+  background: var(--quorra-nav-bg);
+  backdrop-filter: var(--quorra-nav-backdrop);
+  border-bottom: 1px solid var(--quorra-nav-border);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1000;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Navigation Variants */
+.quorra-nav--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.quorra-nav--sticky {
+  position: sticky;
+  top: 0;
+}
+
+.quorra-nav--static {
+  position: static;
+}
+
+.quorra-nav--transparent {
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  backdrop-filter: none;
+}
+
+.quorra-nav--transparent.quorra-nav--scrolled {
+  background: var(--quorra-nav-bg);
+  border-bottom-color: var(--quorra-nav-border);
+  backdrop-filter: var(--quorra-nav-backdrop);
+  box-shadow: var(--quorra-nav-shadow);
+}
+
+.quorra-nav--solid {
+  background: var(--quorra-nav-bg);
+  backdrop-filter: none;
+}
+
+/* 📦 NAVIGATION CONTAINER */
+.quorra-nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* 🏷️ BRAND SECTION */
+.quorra-nav__brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.quorra-nav__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--quorra-nav-text);
+  transition: all 0.2s ease;
+}
+
+.quorra-nav__logo:hover {
+  transform: scale(1.05);
+}
+
+.quorra-nav__logo-image {
+  height: 40px;
+  width: auto;
+}
+
+.quorra-nav__logo-text {
+  background: linear-gradient(135deg, #FF8C42, #CD7F32);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 🔗 DESKTOP NAVIGATION LINKS */
+.quorra-nav__links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.quorra-nav__item {
+  position: relative;
+}
+
+.quorra-nav__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--quorra-nav-text);
+  padding: 0.5rem 0;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.quorra-nav__link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #FF8C42, #FF6B35);
+  transition: width 0.3s ease;
+}
+
+.quorra-nav__link:hover {
+  color: var(--quorra-nav-text-hover);
+}
+
+.quorra-nav__link:hover::after {
+  width: 100%;
+}
+
+.quorra-nav__link--active {
+  color: var(--quorra-nav-active);
+  font-weight: 600;
+}
+
+.quorra-nav__link--active::after {
+  width: 100%;
+}
+
+/* 🔘 CTA BUTTON */
+.quorra-nav__cta {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.quorra-nav__cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #FF8C42, #FF6B35);
+  color: white;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(255, 140, 66, 0.3);
+}
+
+.quorra-nav__cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.6s ease;
+}
+
+.quorra-nav__cta-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.4);
+}
+
+.quorra-nav__cta-button:hover::before {
+  left: 100%;
+}
+
+/* 📱 MOBILE TOGGLE */
+.quorra-nav__mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  transition: background 0.2s ease;
+}
+
+.quorra-nav__mobile-toggle:hover {
+  background: rgba(255, 140, 66, 0.1);
+}
+
+/* 🍔 HAMBURGER ICON */
+.quorra-hamburger {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 18px;
+  justify-content: space-between;
+}
+
+.quorra-hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--quorra-nav-text);
+  border-radius: 1px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.quorra-hamburger--open span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.quorra-hamburger--open span:nth-child(2) {
+  opacity: 0;
+}
+
+.quorra-hamburger--open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* 📱 MOBILE MENU */
+.quorra-nav__mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--quorra-nav-bg);
+  backdrop-filter: var(--quorra-nav-backdrop);
+  border-bottom: 1px solid var(--quorra-nav-border);
+  box-shadow: var(--quorra-nav-shadow);
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.quorra-nav--open .quorra-nav__mobile-menu {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.quorra-nav__mobile-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 2rem 2rem;
+  gap: 0.5rem;
+}
+
+.quorra-nav__mobile-item {
+  position: relative;
+}
+
+.quorra-nav__mobile-item--cta {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--quorra-nav-border);
+}
+
+.quorra-nav__mobile-link {
+  display: block;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--quorra-nav-text);
+  padding: 0.75rem 0;
+  transition: all 0.2s ease;
+  border-radius: 0.375rem;
+}
+
+.quorra-nav__mobile-link:hover {
+  color: var(--quorra-nav-text-hover);
+  background: rgba(255, 140, 66, 0.05);
+  padding-left: 1rem;
+}
+
+.quorra-nav__mobile-link--active {
+  color: var(--quorra-nav-active);
+  font-weight: 600;
+  background: rgba(255, 140, 66, 0.1);
+  padding-left: 1rem;
+}
+
+.quorra-nav__mobile-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #FF8C42, #FF6B35);
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.quorra-nav__mobile-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.4);
+}
+
+/* 📱 RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .quorra-nav__container {
+    padding: 0 1.5rem;
+  }
+
+  .quorra-nav__links,
+  .quorra-nav__cta {
+    display: none;
+  }
+
+  .quorra-nav__mobile-toggle {
+    display: flex;
+  }
+
+  .quorra-nav__logo {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quorra-nav__container {
+    padding: 0 1rem;
+  }
+
+  .quorra-nav__mobile-links {
+    padding: 1rem 1rem 1.5rem;
+  }
+
+  .quorra-nav__mobile-link {
+    font-size: 1rem;
+  }
+}
+
+/* 🌙 DARK MODE */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --quorra-nav-bg: rgba(31, 41, 55, 0.95);
+    --quorra-nav-border: rgba(75, 85, 99, 0.8);
+    --quorra-nav-text: #F9FAFB;
+    --quorra-nav-text-hover: #FF8C42;
+    --quorra-nav-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .quorra-hamburger span {
+    background: var(--quorra-nav-text);
+  }
+}
+
+/* ♿ ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+  .quorra-nav,
+  .quorra-nav__logo,
+  .quorra-nav__link,
+  .quorra-nav__link::after,
+  .quorra-nav__cta-button,
+  .quorra-nav__mobile-menu,
+  .quorra-nav__mobile-link,
+  .quorra-hamburger span {
+    transition: none;
+  }
+}
+
+/* 🎯 FOCUS STYLES */
+.quorra-nav__logo:focus,
+.quorra-nav__link:focus,
+.quorra-nav__cta-button:focus,
+.quorra-nav__mobile-toggle:focus,
+.quorra-nav__mobile-link:focus {
+  outline: 2px solid #FF8C42;
+  outline-offset: 2px;
+}
+
+/* 📏 LARGE SCREENS */
+@media (min-width: 1400px) {
+  .quorra-nav__container {
+    max-width: 1400px;
+    padding: 0 3rem;
+  }
+
+  .quorra-nav__links {
+    gap: 2.5rem;
+  }
+}

@@ -1,0 +1,269 @@
+/**
+ * QUORRA DARK THEME
+ * Divine fire colors for the sacred forge
+ * "Blessed by the Goddess of Smithing"
+ */
+
+:root[data-theme="dark"] {
+  /* 🔥 DIVINE FIRE COLORS - Primary Brand */
+  --quorra-fire-primary: #FF8C42;        /* Divine flame orange */
+  --quorra-fire-secondary: #FF6B35;      /* Intense fire */
+  --quorra-fire-tertiary: #E77C47;       /* Sacred copper */
+  
+  /* 🔥 MOLTEN BRONZE GRADIENTS */
+  --quorra-bronze-light: #CD7F32;        /* Molten bronze */
+  --quorra-bronze-medium: #B8860B;       /* Deep bronze */
+  --quorra-bronze-dark: #8B6914;         /* Ancient bronze */
+  
+  /* ⚫ FORGE DARKNESS - Backgrounds */
+  --quorra-forge-deep: #0A0A0A;          /* Deep forge darkness */
+  --quorra-forge-medium: #1A1A1A;        /* Main forge background */
+  --quorra-forge-light: #2A2A2A;         /* Elevated surfaces */
+  --quorra-forge-lighter: #3A3A3A;       /* Interactive elements */
+  
+  /* 🌟 EMBER GLOWS - Accents */
+  --quorra-ember-bright: #FFD700;        /* Bright gold sparks */
+  --quorra-ember-warm: #FFA500;          /* Warm ember glow */
+  --quorra-ember-soft: #FF7F50;          /* Soft ember light */
+  
+  /* 📜 ANCIENT METALS - Text Colors */
+  --quorra-metal-platinum: #E5E7EB;      /* Primary text (platinum) */
+  --quorra-metal-silver: #D1D5DB;        /* Secondary text (silver) */
+  --quorra-metal-iron: #9CA3AF;          /* Muted text (iron) */
+  --quorra-metal-ash: #6B7280;           /* Disabled text (ash) */
+  
+  /* ⚡ DIVINE ENERGY - Interactive States */
+  --quorra-energy-active: #FF8C42;       /* Active divine fire */
+  --quorra-energy-hover: #FF6B35;        /* Hover intensity */
+  --quorra-energy-focus: #E77C47;        /* Focus glow */
+  --quorra-energy-disabled: #4B5563;     /* Dormant energy */
+  
+  /* 🛡️ SACRED BOUNDARIES - Borders & Dividers */
+  --quorra-boundary-strong: #4B5563;     /* Strong divisions */
+  --quorra-boundary-medium: #374151;     /* Medium divisions */
+  --quorra-boundary-soft: #2A2A2A;       /* Subtle divisions */
+  --quorra-boundary-divine: #FF8C42;     /* Divine highlights */
+  
+  /* 🎨 FUNCTIONAL COLORS - Status & Feedback */
+  --quorra-success: #10B981;             /* Success (blessed green) */
+  --quorra-warning: #F59E0B;             /* Warning (caution gold) */
+  --quorra-error: #EF4444;               /* Error (danger red) */
+  --quorra-info: #3B82F6;                /* Info (wisdom blue) */
+  
+  /* 🌊 SPARKY'S COLORS - AI Assistant */
+  --sparky-primary: #60A5FA;             /* Sparky's blue flame */
+  --sparky-secondary: #93C5FD;           /* Sparky's soft glow */
+  --sparky-background: rgba(96, 165, 250, 0.1); /* Sparky's aura */
+  
+  /* 📊 TIER COLORS - Subscription Levels */
+  --tier-ember: #FF7F50;                 /* Free tier (ember) */
+  --tier-hammer: #FF6B35;               /* Hammer tier */
+  --tier-anvil: #FFD700;                /* Anvil tier (gold) */
+  --tier-foundry: linear-gradient(135deg, #FF8C42, #FFD700); /* Foundry (gradient) */
+  
+  /* 🔥 GRADIENT COLLECTIONS */
+  --gradient-divine-fire: linear-gradient(135deg, #FF8C42 0%, #FF6B35 100%);
+  --gradient-molten-bronze: linear-gradient(135deg, #CD7F32 0%, #B8860B 100%);
+  --gradient-sacred-ember: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  --gradient-forge-depth: linear-gradient(180deg, #1A1A1A 0%, #0A0A0A 100%);
+  --gradient-divine-blessing: linear-gradient(135deg, #FF8C42 0%, #FFD700 50%, #FF6B35 100%);
+  
+  /* 🌫️ SHADOWS & GLOWS */
+  --shadow-divine-small: 0 2px 8px rgba(255, 140, 66, 0.15);
+  --shadow-divine-medium: 0 4px 16px rgba(255, 140, 66, 0.2);
+  --shadow-divine-large: 0 8px 32px rgba(255, 140, 66, 0.25);
+  --shadow-forge-depth: 0 4px 16px rgba(0, 0, 0, 0.4);
+  
+  --glow-ember: 0 0 16px rgba(255, 215, 0, 0.3);
+  --glow-fire: 0 0 24px rgba(255, 140, 66, 0.4);
+  --glow-divine: 0 0 32px rgba(255, 140, 66, 0.5);
+  
+  /* 📏 SACRED MEASUREMENTS - Spacing & Sizing */
+  --space-spark: 4px;                    /* Tiny spark */
+  --space-ember: 8px;                    /* Small ember */
+  --space-flame: 16px;                   /* Medium flame */
+  --space-forge: 24px;                   /* Large forge */
+  --space-divine: 32px;                  /* Divine spacing */
+  --space-goddess: 48px;                 /* Goddess-level spacing */
+  
+  /* 🎯 COMPONENT-SPECIFIC VARIABLES */
+  
+  /* Button States */
+  --btn-primary-bg: var(--gradient-divine-fire);
+  --btn-primary-text: var(--quorra-metal-platinum);
+  --btn-primary-hover: var(--quorra-energy-hover);
+  --btn-primary-shadow: var(--shadow-divine-medium);
+  
+  --btn-secondary-bg: transparent;
+  --btn-secondary-text: var(--quorra-fire-primary);
+  --btn-secondary-border: var(--quorra-fire-primary);
+  --btn-secondary-hover-bg: rgba(255, 140, 66, 0.1);
+  
+  /* Input Fields */
+  --input-bg: var(--quorra-forge-light);
+  --input-border: var(--quorra-boundary-medium);
+  --input-text: var(--quorra-metal-platinum);
+  --input-placeholder: var(--quorra-metal-iron);
+  --input-focus-border: var(--quorra-fire-primary);
+  --input-focus-glow: var(--glow-ember);
+  
+  /* Cards & Panels */
+  --card-bg: var(--quorra-forge-light);
+  --card-border: var(--quorra-boundary-soft);
+  --card-shadow: var(--shadow-forge-depth);
+  --card-hover-shadow: var(--shadow-divine-medium);
+  
+  /* Navigation */
+  --nav-bg: var(--quorra-forge-medium);
+  --nav-text: var(--quorra-metal-silver);
+  --nav-text-active: var(--quorra-fire-primary);
+  --nav-border: var(--quorra-boundary-medium);
+  
+  /* Editor Canvas */
+  --canvas-bg: var(--quorra-forge-medium);
+  --canvas-grid: rgba(255, 140, 66, 0.1);
+  --canvas-selection: var(--quorra-fire-primary);
+  --canvas-guides: rgba(255, 140, 66, 0.3);
+  
+  /* Code Editor */
+  --code-bg: var(--quorra-forge-deep);
+  --code-text: var(--quorra-metal-platinum);
+  --code-comment: var(--quorra-metal-iron);
+  --code-keyword: var(--quorra-fire-primary);
+  --code-string: var(--quorra-ember-bright);
+  --code-number: var(--sparky-primary);
+  
+  /* Sparky Chat */
+  --sparky-message-bg: var(--sparky-background);
+  --sparky-message-border: var(--sparky-secondary);
+  --sparky-avatar-glow: var(--glow-ember);
+  
+  /* Performance Indicators */
+  --perf-excellent: var(--quorra-success);
+  --perf-good: var(--quorra-ember-bright);
+  --perf-warning: var(--quorra-warning);
+  --perf-poor: var(--quorra-error);
+  
+  /* Loading & Progress */
+  --loading-bg: var(--quorra-forge-lighter);
+  --loading-fill: var(--gradient-divine-fire);
+  --progress-track: var(--quorra-boundary-medium);
+  --progress-fill: var(--gradient-divine-fire);
+  
+  /* Tooltips */
+  --tooltip-bg: var(--quorra-forge-deep);
+  --tooltip-text: var(--quorra-metal-platinum);
+  --tooltip-border: var(--quorra-fire-primary);
+  --tooltip-shadow: var(--shadow-divine-large);
+}
+
+/* 🔥 DIVINE FIRE ANIMATIONS */
+@keyframes divineFlicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes emberGlow {
+  0%, 100% { 
+    box-shadow: var(--glow-ember);
+    transform: scale(1);
+  }
+  50% { 
+    box-shadow: var(--glow-fire);
+    transform: scale(1.02);
+  }
+}
+
+@keyframes forgePulse {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes sparkyChatPulse {
+  0%, 100% { 
+    background: var(--sparky-background);
+    border-color: var(--sparky-secondary);
+  }
+  50% { 
+    background: rgba(96, 165, 250, 0.15);
+    border-color: var(--sparky-primary);
+  }
+}
+
+/* 🎨 UTILITY CLASSES FOR DARK THEME */
+
+/* Divine Fire Backgrounds */
+.bg-divine-fire { background: var(--gradient-divine-fire); }
+.bg-molten-bronze { background: var(--gradient-molten-bronze); }
+.bg-sacred-ember { background: var(--gradient-sacred-ember); }
+.bg-forge-depth { background: var(--gradient-forge-depth); }
+
+/* Sacred Text Colors */
+.text-divine-fire { color: var(--quorra-fire-primary); }
+.text-ember-glow { color: var(--quorra-ember-bright); }
+.text-platinum { color: var(--quorra-metal-platinum); }
+.text-silver { color: var(--quorra-metal-silver); }
+.text-iron { color: var(--quorra-metal-iron); }
+
+/* Divine Borders */
+.border-divine { border-color: var(--quorra-fire-primary); }
+.border-ember { border-color: var(--quorra-ember-bright); }
+.border-bronze { border-color: var(--quorra-bronze-medium); }
+
+/* Sacred Shadows */
+.shadow-divine { box-shadow: var(--shadow-divine-medium); }
+.shadow-forge { box-shadow: var(--shadow-forge-depth); }
+.glow-ember { box-shadow: var(--glow-ember); }
+.glow-divine { box-shadow: var(--glow-divine); }
+
+/* Divine Animations */
+.flicker { animation: divineFlicker 2s ease-in-out infinite; }
+.ember-glow { animation: emberGlow 3s ease-in-out infinite; }
+.forge-pulse { animation: forgePulse 4s ease-in-out infinite; }
+
+/* Sparky Specific */
+.sparky-message { animation: sparkyChatPulse 2s ease-in-out infinite; }
+
+/* 🔥 COMPONENT STYLING - Dark Theme Overrides */
+
+/* Ensure proper contrast and divine fire aesthetic */
+.dark-theme-override {
+  color-scheme: dark;
+}
+
+/* Selection styling */
+::selection {
+  background: var(--quorra-fire-primary);
+  color: var(--quorra-forge-deep);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 12px;
+  background: var(--quorra-forge-medium);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-divine-fire);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--quorra-fire-secondary);
+}
+
+/* Focus ring styling */
+:focus-visible {
+  outline: 2px solid var(--quorra-fire-primary);
+  outline-offset: 2px;
+  box-shadow: var(--glow-ember);
+}
+
+/**
+ * 🔥 BLESSED BY QUORRA, GODDESS OF SMITHING 🔥
+ * This dark theme channels the divine fire of the sacred forge
+ * Colors chosen with divine wisdom for maximum user experience
+ * 
+ * "In darkness, the divine fire burns brightest"
+ * - Ancient Forge Wisdom
+ */
