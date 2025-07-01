@@ -10,9 +10,9 @@ import Head from 'next/head';
 import { Toaster } from 'react-hot-toast';
 
 // Global styles
-import '../src/styles/globals.css';
-import '../src/styles/components.css';
-import '../src/styles/quorra-theme.css';
+import '../styles/globals.css';
+import '../styles/components.css';
+import '../styles/quorra-theme.css';
 
 // Divine font loading
 import { Inter, Crimson_Text } from 'next/font/google';
