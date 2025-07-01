@@ -1106,7 +1106,7 @@ class QuorraStorageService {
       localStorage: typeof Storage !== 'undefined',
       fetch: typeof fetch !== 'undefined',
       promises: typeof Promise !== 'undefined',
-      modules: typeof require !== 'undefined' || typeof window !== 'undefined',
+     modules: typeof require !== 'undefined',
       customEvents: typeof CustomEvent !== 'undefined',
       blob: typeof Blob !== 'undefined'
     };
