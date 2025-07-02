@@ -1,23 +1,5 @@
 import React from 'react';
 
-// Import your beautiful assets
-import quorraIcon from '../assets/images/logos/quorra-icon.png';
-import quorraLogoDark from '../assets/images/logos/quorra-logo-dark.png';
-import quorraLogoLight from '../assets/images/logos/quorra-logo-light.png';
-import quorraGoddess from '../assets/images/quorra-goddess.png';
-import sparkyHelpful from '../assets/images/sparky-ai-helpful.png';
-
-// Tier Icons
-import emberIcon from '../assets/images/icons/tiers/ember-icon.png';
-import hammerIcon from '../assets/images/icons/tiers/hammer-icon.png';
-import anvilIcon from '../assets/images/icons/tiers/anvil-icon.png';
-import foundryIcon from '../assets/images/icons/tiers/foundry-icon.png';
-
-// Industry Icons (selection)
-import creativeIcon from '../assets/images/icons/industries/creative.png';
-import techIcon from '../assets/images/icons/industries/technology.png';
-import healthcareIcon from '../assets/images/icons/industries/healthcare.png';
-
 const QuorraLandingPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white relative overflow-hidden">
@@ -33,7 +15,7 @@ const QuorraLandingPage = () => {
       {/* Navigation */}
       <nav className="relative z-10 flex items-center justify-between p-6">
         <div className="flex items-center space-x-4">
-          <img src={quorraLogoDark} alt="Quorra Logo" className="h-8" />
+          <img src="/images/logos/quorra-logo-dark.png" alt="Quorra Logo" className="h-8" />
         </div>
         <div className="hidden md:flex space-x-8">
           <a href="#features" className="text-orange-200 hover:text-orange-400 transition-colors">Features</a>
@@ -52,7 +34,7 @@ const QuorraLandingPage = () => {
           <div className="mb-8 flex justify-center">
             <div className="relative">
               <img 
-                src={quorraIcon} 
+                src="/images/logos/quorra-icon.png" 
                 alt="Quorra Divine Fire Logo"
                 className="w-32 h-32 drop-shadow-2xl hover:scale-105 transition-transform"
               />
@@ -150,7 +132,7 @@ const QuorraLandingPage = () => {
             {/* Secure Framework */}
             <div className="border border-orange-500/30 rounded-lg p-8 bg-gradient-to-br from-orange-900/20 to-red-900/20 hover:border-orange-400/50 transition-all group">
               <div className="mb-4 group-hover:scale-110 transition-transform flex justify-center">
-                <img src={hammerIcon} alt="Hammer - Secure Framework" className="w-16 h-16" />
+                <img src="/images/icons/tiers/hammer-icon.png" alt="Hammer - Secure Framework" className="w-16 h-16" />
               </div>
               <h3 className="text-xl font-bold text-orange-300 mb-4">Secure Framework</h3>
               <p className="text-gray-400 leading-relaxed">
@@ -161,7 +143,7 @@ const QuorraLandingPage = () => {
             {/* Blazing Fast */}
             <div className="border border-orange-500/30 rounded-lg p-8 bg-gradient-to-br from-orange-900/20 to-red-900/20 hover:border-orange-400/50 transition-all group">
               <div className="mb-4 group-hover:scale-110 transition-transform flex justify-center">
-                <img src={anvilIcon} alt="Anvil - Blazing Fast" className="w-16 h-16" />
+                <img src="/images/icons/tiers/anvil-icon.png" alt="Anvil - Blazing Fast" className="w-16 h-16" />
               </div>
               <h3 className="text-xl font-bold text-orange-300 mb-4">Blazing Fast</h3>
               <p className="text-gray-400 leading-relaxed">
@@ -172,7 +154,7 @@ const QuorraLandingPage = () => {
             {/* Heat-forged Performance */}
             <div className="border border-orange-500/30 rounded-lg p-8 bg-gradient-to-br from-orange-900/20 to-red-900/20 hover:border-orange-400/50 transition-all group">
               <div className="mb-4 group-hover:scale-110 transition-transform flex justify-center">
-                <img src={foundryIcon} alt="Foundry - Heat-forged Performance" className="w-16 h-16" />
+                <img src="/images/icons/tiers/foundry-icon.png" alt="Foundry - Heat-forged Performance" className="w-16 h-16" />
               </div>
               <h3 className="text-xl font-bold text-orange-300 mb-4">Heat-forged Performance</h3>
               <p className="text-gray-400 leading-relaxed">
