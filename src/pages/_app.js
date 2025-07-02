@@ -9,11 +9,6 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { Toaster } from 'react-hot-toast';
 
-// Global styles
-import '../styles/globals.css';
-import '../styles/components.css';
-import '../styles/quorra-theme.css';
-
 // Divine font loading
 import { Inter, Crimson_Text } from 'next/font/google';
 
