@@ -1,0 +1,26 @@
+/* QUORRA Divine Theme Colors */
+:root {
+  /* Divine Fire Colors */
+  --divine-flame: linear-gradient(45deg, #ff8c42, #ff6b35);
+  --molten-bronze: linear-gradient(45deg, #cd7f32, #b8860b);
+  --sacred-copper: linear-gradient(45deg, #e77c47, #d2691e);
+  
+  /* Supporting Colors */
+  --heated-steel: #4a4a4a;
+  --cool-iron: #6c757d;
+  --forge-glow: #fff8dc;
+  --ember-spark: #ffd700;
+  --deep-forge: #1a1a1a;
+  --ash-gray: #f5f5f5;
+}
+
+.divine-gradient {
+  background: var(--divine-flame);
+}
+
+.text-divine {
+  background: var(--divine-flame);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
