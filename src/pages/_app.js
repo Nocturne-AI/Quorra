@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { Toaster } from 'react-hot-toast';
-
+import '../styles/globals.css'
 // Divine font loading
 import { Inter, Crimson_Text } from 'next/font/google';
 
