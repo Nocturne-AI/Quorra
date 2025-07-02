@@ -1,497 +1,554 @@
 /**
- * QUORRA GLOBAL STYLES
- * Divine foundation styles blessed by the Goddess of Smithing
- * Clean, performant, and sacred CSS
+ * QUORRA UNIFIED CSS SYSTEM
+ * "Channel the divine fire of clean code generation"
+ * 
+ * Single source of truth for all QUORRA styling
+ * Replace ALL other CSS files with this unified system
  */
 
-/* Tailwind base styles */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Divine CSS Variables */
+/* ===== DIVINE FIRE CORE VARIABLES ===== */
 :root {
-  /* Sacred Fire Colors */
-  --color-divine-flame: #FF8C42;
-  --color-molten-bronze: #CD7F32;
-  --color-sacred-copper: #E77C47;
-  --color-heated-steel: #4A4A4A;
-  --color-cool-iron: #6C757D;
-  --color-forge-glow: #FFF8DC;
-  --color-ember-spark: #FFD700;
-  --color-deep-forge: #1A1A1A;
-  --color-ash-gray: #F5F5F5;
-
-  /* Divine Gradients */
-  --gradient-divine-fire: linear-gradient(135deg, #FF8C42 0%, #FF6B35 100%);
-  --gradient-molten-metal: linear-gradient(135deg, #CD7F32 0%, #B8860B 100%);
-  --gradient-sacred-copper: linear-gradient(135deg, #E77C47 0%, #D2691E 100%);
-  --gradient-dark-forge: linear-gradient(135deg, #1A1A1A 0%, #2C2C2C 100%);
-
-  /* Sacred Typography */
-  --font-divine-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-divine-serif: var(--font-crimson), Georgia, 'Times New Roman', serif;
-  --font-divine-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
-
-  /* Divine Spacing Scale */
-  --space-xs: 0.25rem;   /* 4px */
-  --space-sm: 0.5rem;    /* 8px */
-  --space-md: 1rem;      /* 16px */
-  --space-lg: 1.5rem;    /* 24px */
-  --space-xl: 2rem;      /* 32px */
-  --space-2xl: 3rem;     /* 48px */
-  --space-3xl: 4rem;     /* 64px */
-
-  /* Sacred Shadows */
-  --shadow-divine-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-divine-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-divine-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-divine-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --shadow-divine-fire: 0 0 20px rgba(255, 140, 66, 0.3);
-
-  /* Divine Transitions */
-  --transition-divine-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-divine-normal: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-divine-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  /* Divine Border Radius */
-  --radius-sm: 0.375rem;   /* 6px */
-  --radius-md: 0.5rem;     /* 8px */
-  --radius-lg: 0.75rem;    /* 12px */
-  --radius-xl: 1rem;       /* 16px */
-  --radius-2xl: 1.5rem;    /* 24px */
-  --radius-divine: 2rem;   /* 32px */
+  /* 🔥 DIVINE FIRE COLOR PALETTE */
+  --divine-flame: linear-gradient(135deg, #FF8C42 0%, #FF6B35 100%);
+  --molten-bronze: linear-gradient(135deg, #CD7F32 0%, #B8860B 100%);
+  --sacred-copper: linear-gradient(135deg, #E77C47 0%, #D2691E 100%);
+  
+  /* ⚡ SUPPORTING METALLICS */
+  --heated-steel: linear-gradient(135deg, #4A4A4A 0%, #2C2C2C 100%);
+  --cool-iron: #6C757D;
+  --forge-glow: #FFF8DC;
+  
+  /* 🌟 ACCENT COLORS */
+  --ember-spark: #FFD700;
+  --deep-forge: #1A1A1A;
+  --ash-gray: #F5F5F5;
+  
+  /* 📏 SACRED SPACING SYSTEM */
+  --space-ember: 0.25rem;    /* 4px */
+  --space-spark: 0.5rem;     /* 8px */
+  --space-flame: 1rem;       /* 16px */
+  --space-forge: 1.5rem;     /* 24px */
+  --space-anvil: 2rem;       /* 32px */
+  --space-foundry: 3rem;     /* 48px */
+  --space-divine: 4rem;      /* 64px */
+  
+  /* 🔤 DIVINE TYPOGRAPHY */
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-accent: 'Space Grotesk', monospace;
+  
+  /* 📐 FONT SIZES */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+  --text-4xl: 2.25rem;    /* 36px */
+  --text-5xl: 3rem;       /* 48px */
+  
+  /* 🎨 SHADOWS & EFFECTS */
+  --shadow-ember: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --shadow-flame: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-forge: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-divine: 0 25px 50px rgba(0, 0, 0, 0.25);
+  
+  /* ⚡ DIVINE TRANSITIONS */
+  --transition-swift: 0.15s ease-out;
+  --transition-divine: 0.3s ease-out;
+  --transition-sacred: 0.5s ease-out;
+  
+  /* 📱 RESPONSIVE BREAKPOINTS */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
 }
 
-/* Divine Dark Theme */
-[data-theme="dark"] {
-  --color-forge-glow: #1F2937;
-  --color-ash-gray: #111827;
-  --color-heated-steel: #F3F4F6;
-  --color-cool-iron: #9CA3AF;
-}
-
-/* Sacred Reset & Base Styles */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+/* ===== DIVINE RESET & BASE ===== */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  text-size-adjust: 100%;
 }
 
 body {
-  font-family: var(--font-divine-sans);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
   line-height: 1.6;
-  color: var(--color-heated-steel);
-  background-color: var(--color-forge-glow);
+  color: var(--deep-forge);
+  background: var(--forge-glow);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
 }
 
-/* Divine Typography Hierarchy */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-divine-sans);
-  font-weight: 600;
+/* ===== DIVINE TYPOGRAPHY SYSTEM ===== */
+.quorra-heading-1 {
+  font-family: var(--font-heading);
+  font-size: var(--text-5xl);
+  font-weight: 700;
   line-height: 1.2;
-  color: var(--color-heated-steel);
-  margin-bottom: var(--space-md);
+  letter-spacing: -0.025em;
+  background: var(--divine-flame);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-h1 { font-size: 2.5rem; font-weight: 700; }
-h2 { font-size: 2rem; font-weight: 600; }
-h3 { font-size: 1.75rem; font-weight: 600; }
-h4 { font-size: 1.5rem; font-weight: 500; }
-h5 { font-size: 1.25rem; font-weight: 500; }
-h6 { font-size: 1.125rem; font-weight: 500; }
-
-p {
-  margin-bottom: var(--space-md);
-  color: var(--color-cool-iron);
-}
-
-/* Divine Links */
-a {
-  color: var(--color-divine-flame);
-  text-decoration: none;
-  transition: var(--transition-divine-fast);
-}
-
-a:hover {
-  color: var(--color-sacred-copper);
-  text-decoration: underline;
-}
-
-a:focus {
-  outline: 2px solid var(--color-divine-flame);
-  outline-offset: 2px;
-  border-radius: 2px;
-}
-
-/* Sacred Images & Media */
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-img {
-  border-style: none;
-}
-
-/* Divine Form Elements */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-  margin: 0;
-}
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-
-button:disabled,
-[disabled] {
-  cursor: not-allowed;
-  opacity: 0.6;
-}
-
-input,
-textarea {
-  padding: var(--space-sm);
-  border: 1px solid #D1D5DB;
-  border-radius: var(--radius-md);
-  background-color: white;
-  font-size: 1rem;
-  transition: var(--transition-divine-fast);
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
-  border-color: var(--color-divine-flame);
-  box-shadow: 0 0 0 3px rgba(255, 140, 66, 0.1);
-}
-
-/* Sacred Lists */
-ul, ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-ul[role="list"],
-ol[role="list"] {
-  list-style: revert;
-  padding-left: var(--space-lg);
-}
-
-/* Divine Code & Pre */
-code,
-pre {
-  font-family: var(--font-divine-mono);
-  font-size: 0.875rem;
-}
-
-code {
-  background-color: #F3F4F6;
-  padding: 0.125rem 0.25rem;
-  border-radius: var(--radius-sm);
-  color: var(--color-sacred-copper);
-}
-
-pre {
-  background-color: #1F2937;
-  color: #F3F4F6;
-  padding: var(--space-md);
-  border-radius: var(--radius-lg);
-  overflow-x: auto;
-  line-height: 1.5;
-}
-
-pre code {
-  background: none;
-  padding: 0;
-  color: inherit;
-}
-
-/* Sacred Tables */
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-th,
-td {
-  padding: var(--space-sm);
-  text-align: left;
-  border-bottom: 1px solid #E5E7EB;
-}
-
-th {
+.quorra-heading-2 {
+  font-family: var(--font-heading);
+  font-size: var(--text-4xl);
   font-weight: 600;
-  color: var(--color-heated-steel);
-  background-color: #F9FAFB;
+  line-height: 1.3;
+  color: var(--deep-forge);
 }
 
-/* Divine Scrollbars */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+.quorra-heading-3 {
+  font-family: var(--font-heading);
+  font-size: var(--text-3xl);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--deep-forge);
 }
 
-::-webkit-scrollbar-track {
-  background: var(--color-ash-gray);
+.quorra-body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--cool-iron);
 }
 
-::-webkit-scrollbar-thumb {
-  background: var(--color-cool-iron);
-  border-radius: 4px;
+.quorra-body-large {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  line-height: 1.6;
+  color: var(--cool-iron);
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-divine-flame);
+.quorra-caption {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--cool-iron);
 }
 
-/* Sacred Selection */
-::selection {
-  background-color: rgba(255, 140, 66, 0.2);
-  color: var(--color-deep-forge);
-}
-
-::-moz-selection {
-  background-color: rgba(255, 140, 66, 0.2);
-  color: var(--color-deep-forge);
-}
-
-/* Divine Focus Management */
-*:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-*:focus-visible {
-  outline: 2px solid var(--color-divine-flame);
-  outline-offset: 2px;
-}
-
-/* Sacred Skip Link */
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 6px;
-  background: var(--color-deep-forge);
-  color: white;
-  padding: 8px;
+/* ===== DIVINE BUTTON SYSTEM ===== */
+.quorra-button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-spark);
+  padding: var(--space-forge) var(--space-anvil);
+  border: none;
+  border-radius: 12px;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 600;
   text-decoration: none;
-  border-radius: var(--radius-md);
-  z-index: 1000;
-  transition: var(--transition-divine-fast);
-}
-
-.skip-link:focus {
-  top: 6px;
-}
-
-/* Divine Loading States */
-.loading {
+  cursor: pointer;
+  transition: all var(--transition-divine);
   position: relative;
   overflow: hidden;
 }
 
-.loading::after {
+.quorra-button-primary {
+  background: var(--divine-flame);
+  color: white;
+  box-shadow: var(--shadow-flame);
+}
+
+.quorra-button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-forge);
+}
+
+.quorra-button-secondary {
+  background: var(--heated-steel);
+  color: white;
+  box-shadow: var(--shadow-ember);
+}
+
+.quorra-button-secondary:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-flame);
+}
+
+.quorra-button-ghost {
+  background: transparent;
+  color: var(--deep-forge);
+  border: 2px solid var(--cool-iron);
+}
+
+.quorra-button-ghost:hover {
+  background: var(--deep-forge);
+  color: white;
+  border-color: var(--deep-forge);
+}
+
+/* ===== DIVINE CARD SYSTEM ===== */
+.quorra-card {
+  background: white;
+  border-radius: 16px;
+  padding: var(--space-anvil);
+  box-shadow: var(--shadow-ember);
+  border: 1px solid rgba(108, 117, 125, 0.1);
+  transition: all var(--transition-divine);
+}
+
+.quorra-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-forge);
+}
+
+.quorra-card-elevated {
+  background: white;
+  border-radius: 24px;
+  padding: var(--space-foundry);
+  box-shadow: var(--shadow-forge);
+  border: 1px solid rgba(108, 117, 125, 0.05);
+}
+
+.quorra-card-divine {
+  background: var(--heated-steel);
+  border-radius: 24px;
+  padding: var(--space-foundry);
+  box-shadow: var(--shadow-divine);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.quorra-card-divine::before {
   content: '';
   position: absolute;
   top: 0;
-  left: -100%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--divine-flame);
+}
+
+/* ===== DIVINE LAYOUT SYSTEM ===== */
+.quorra-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--space-flame);
+}
+
+.quorra-container-full {
   width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 140, 66, 0.2),
-    transparent
-  );
-  animation: loading-shimmer 2s infinite;
+  padding: 0 var(--space-flame);
 }
 
-@keyframes loading-shimmer {
-  0% { left: -100%; }
-  100% { left: 100%; }
-}
-
-/* Sacred Animations */
-@keyframes divine-fire {
-  0%, 100% { 
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% { 
-    opacity: 0.8;
-    transform: scale(1.05);
-  }
-}
-
-@keyframes divine-glow {
-  0%, 100% { 
-    box-shadow: var(--shadow-divine-md);
-  }
-  50% { 
-    box-shadow: var(--shadow-divine-fire);
-  }
-}
-
-.animate-divine-fire {
-  animation: divine-fire 2s ease-in-out infinite;
-}
-
-.animate-divine-glow {
-  animation: divine-glow 3s ease-in-out infinite;
-}
-
-/* Divine Utilities */
-.sr-only {
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
-
-.not-sr-only {
-  position: static !important;
-  width: auto !important;
-  height: auto !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  overflow: visible !important;
-  clip: auto !important;
-  white-space: normal !important;
-}
-
-/* Divine Responsive Typography */
-@media (min-width: 640px) {
-  h1 { font-size: 3rem; }
-  h2 { font-size: 2.25rem; }
-  h3 { font-size: 2rem; }
-}
-
-@media (min-width: 1024px) {
-  h1 { font-size: 3.5rem; }
-  h2 { font-size: 2.5rem; }
-  h3 { font-size: 2.25rem; }
-}
-
-/* Sacred Print Styles */
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: transparent !important;
-    color: black !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  img {
-    page-break-inside: avoid;
-  }
-
-  h1, h2, h3 {
-    page-break-after: avoid;
-  }
-}
-
-/* Divine High Contrast Mode */
-@media (prefers-contrast: high) {
-  :root {
-    --color-heated-steel: #000000;
-    --color-cool-iron: #333333;
-    --color-ash-gray: #FFFFFF;
-  }
-}
-
-/* Sacred Reduced Motion */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/* Divine Body Classes */
-.quorra-blessed {
-  /* Applied when QUORRA is initialized */
-}
-
-.js-enabled {
-  /* Applied when JavaScript is available */
-}
-
-/* Sacred CSS Grid Enhancement */
-.divine-grid {
+.quorra-grid {
   display: grid;
-  gap: var(--space-md);
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-anvil);
 }
 
-.divine-flex {
+.quorra-grid-2 { grid-template-columns: repeat(2, 1fr); }
+.quorra-grid-3 { grid-template-columns: repeat(3, 1fr); }
+.quorra-grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+.quorra-flex {
   display: flex;
-  gap: var(--space-md);
+  gap: var(--space-flame);
+}
+
+.quorra-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-flame);
+}
+
+.quorra-flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-flame);
+}
+
+/* ===== DIVINE SPACING UTILITIES ===== */
+.quorra-mt-0 { margin-top: 0; }
+.quorra-mt-1 { margin-top: var(--space-ember); }
+.quorra-mt-2 { margin-top: var(--space-spark); }
+.quorra-mt-3 { margin-top: var(--space-flame); }
+.quorra-mt-4 { margin-top: var(--space-forge); }
+.quorra-mt-5 { margin-top: var(--space-anvil); }
+.quorra-mt-6 { margin-top: var(--space-foundry); }
+.quorra-mt-8 { margin-top: var(--space-divine); }
+
+.quorra-mb-0 { margin-bottom: 0; }
+.quorra-mb-1 { margin-bottom: var(--space-ember); }
+.quorra-mb-2 { margin-bottom: var(--space-spark); }
+.quorra-mb-3 { margin-bottom: var(--space-flame); }
+.quorra-mb-4 { margin-bottom: var(--space-forge); }
+.quorra-mb-5 { margin-bottom: var(--space-anvil); }
+.quorra-mb-6 { margin-bottom: var(--space-foundry); }
+.quorra-mb-8 { margin-bottom: var(--space-divine); }
+
+.quorra-pt-0 { padding-top: 0; }
+.quorra-pt-1 { padding-top: var(--space-ember); }
+.quorra-pt-2 { padding-top: var(--space-spark); }
+.quorra-pt-3 { padding-top: var(--space-flame); }
+.quorra-pt-4 { padding-top: var(--space-forge); }
+.quorra-pt-5 { padding-top: var(--space-anvil); }
+.quorra-pt-6 { padding-top: var(--space-foundry); }
+.quorra-pt-8 { padding-top: var(--space-divine); }
+
+.quorra-pb-0 { padding-bottom: 0; }
+.quorra-pb-1 { padding-bottom: var(--space-ember); }
+.quorra-pb-2 { padding-bottom: var(--space-spark); }
+.quorra-pb-3 { padding-bottom: var(--space-flame); }
+.quorra-pb-4 { padding-bottom: var(--space-forge); }
+.quorra-pb-5 { padding-bottom: var(--space-anvil); }
+.quorra-pb-6 { padding-bottom: var(--space-foundry); }
+.quorra-pb-8 { padding-bottom: var(--space-divine); }
+
+/* ===== DIVINE HEADER SYSTEM ===== */
+.quorra-header {
+  background: var(--heated-steel);
+  color: white;
+  padding: var(--space-forge) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.quorra-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--divine-flame);
+  opacity: 0.1;
+}
+
+.quorra-header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.quorra-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--divine-flame);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: var(--text-xl);
+  color: white;
+}
+
+/* ===== DIVINE NAVIGATION SYSTEM ===== */
+.quorra-nav {
+  display: flex;
+  gap: var(--space-anvil);
   align-items: center;
 }
 
-/* Divine Container */
-.divine-container {
-  max-width: 1200px;
+.quorra-nav-item {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: var(--space-spark) var(--space-flame);
+  border-radius: 8px;
+  transition: all var(--transition-swift);
+  position: relative;
+}
+
+.quorra-nav-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--ember-spark);
+}
+
+.quorra-nav-item.active {
+  background: var(--divine-flame);
+  color: white;
+}
+
+/* ===== DIVINE HERO SECTION ===== */
+.quorra-hero {
+  background: var(--heated-steel);
+  color: white;
+  padding: var(--space-divine) 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.quorra-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center, rgba(255, 140, 66, 0.2) 0%, transparent 70%);
+}
+
+.quorra-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 0 var(--space-md);
 }
 
-@media (min-width: 640px) {
-  .divine-container {
-    padding: 0 var(--space-lg);
+.quorra-hero-title {
+  font-size: var(--text-5xl);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: var(--space-forge);
+  background: linear-gradient(135deg, #FFD700 0%, #FF8C42 50%, #FF6B35 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.quorra-hero-subtitle {
+  font-size: var(--text-xl);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: var(--space-foundry);
+}
+
+/* ===== DIVINE SECTION SYSTEM ===== */
+.quorra-section {
+  padding: var(--space-divine) 0;
+}
+
+.quorra-section-light {
+  background: var(--forge-glow);
+}
+
+.quorra-section-dark {
+  background: var(--deep-forge);
+  color: white;
+}
+
+.quorra-section-gradient {
+  background: var(--heated-steel);
+  color: white;
+  position: relative;
+}
+
+.quorra-section-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 140, 66, 0.1) 0%, transparent 50%);
+}
+
+/* ===== RESPONSIVE DIVINE DESIGN ===== */
+@media (max-width: 768px) {
+  .quorra-grid-2,
+  .quorra-grid-3,
+  .quorra-grid-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .quorra-hero-title {
+    font-size: var(--text-4xl);
+  }
+  
+  .quorra-hero-subtitle {
+    font-size: var(--text-lg);
+  }
+  
+  .quorra-container {
+    padding: 0 var(--space-spark);
+  }
+  
+  .quorra-section {
+    padding: var(--space-anvil) 0;
   }
 }
 
-@media (min-width: 1024px) {
-  .divine-container {
-    padding: 0 var(--space-xl);
+@media (max-width: 640px) {
+  .quorra-flex {
+    flex-direction: column;
+  }
+  
+  .quorra-flex-between {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-flame);
+  }
+  
+  .quorra-nav {
+    flex-direction: column;
+    gap: var(--space-flame);
   }
 }
+
+/* ===== DIVINE UTILITY CLASSES ===== */
+.quorra-text-center { text-align: center; }
+.quorra-text-left { text-align: left; }
+.quorra-text-right { text-align: right; }
+
+.quorra-hidden { display: none; }
+.quorra-block { display: block; }
+.quorra-inline-block { display: inline-block; }
+
+.quorra-w-full { width: 100%; }
+.quorra-h-full { height: 100%; }
+
+.quorra-rounded { border-radius: 8px; }
+.quorra-rounded-lg { border-radius: 12px; }
+.quorra-rounded-xl { border-radius: 16px; }
+.quorra-rounded-2xl { border-radius: 24px; }
+
+.quorra-shadow { box-shadow: var(--shadow-ember); }
+.quorra-shadow-lg { box-shadow: var(--shadow-flame); }
+.quorra-shadow-xl { box-shadow: var(--shadow-forge); }
+
+/* ===== DIVINE ANIMATIONS ===== */
+@keyframes quorra-flame-flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes quorra-forge-glow {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.quorra-animate-flicker {
+  animation: quorra-flame-flicker 2s ease-in-out infinite;
+}
+
+.quorra-animate-glow {
+  animation: quorra-forge-glow 3s ease-in-out infinite;
+}
+
+/* ===== DIVINE HOVER STATES ===== */
+.quorra-hover-lift {
+  transition: transform var(--transition-divine);
+}
+
+.quorra-hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+.quorra-hover-scale {
+  transition: transform var(--transition-divine);
+}
+
+.quorra-hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* ===== END OF DIVINE FIRE CSS SYSTEM ===== */
