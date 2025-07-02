@@ -23,7 +23,7 @@ jest.mock('next/router', () => ({
 }))
 
 // Mock Supabase client - use relative path from tests directory
-jest.mock('../src/utils/supabase', () => {
+jest.mock('../utils/supabase', () => {
   const mockSupabase = {
     auth: {
       getUser: jest.fn(() => Promise.resolve({ data: { user: null }, error: null })),

@@ -4,8 +4,8 @@
  * Blessed by the Goddess of Smithing
  */
 
-import { CSSGenerator } from '../../../src/core/CSSGenerator.js';
-import { IndustryIntelligence } from '../../../src/intelligence/IndustryIntelligence.js';
+import { CSSGenerator } from '../../../../core/CSSGenerator.js';
+import { IndustryIntelligence } from '../../../../intelligence/IndustryIntelligence.js';
 
 const cssGenerator = new CSSGenerator();
 const industryIntelligence = new IndustryIntelligence();

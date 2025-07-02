@@ -1,4 +1,4 @@
-import { QuorraCoreEngine } from '../../src/core/QuorraCoreEngine.js';
+import { QuorraCoreEngine } from '../../core/QuorraCoreEngine.js';
 import { performanceTestUtils } from '../utils/performanceUtils.js';
 
 console.log('⚡ QUORRA Performance tests loaded - Sacred speed standards ready for validation');
@@ -329,7 +329,7 @@ describe('⚡ QUORRA Performance Tests - Sacred Speed Standards', () => {
 });
 
 // Mock QuorraCoreEngine for performance testing
-jest.mock('../../src/core/QuorraCoreEngine.js', () => ({
+jest.mock('../../core/QuorraCoreEngine.js', () => ({
   QuorraCoreEngine: jest.fn().mockImplementation(() => ({
     forgeWebsite: jest.fn().mockImplementation(async (websiteData) => {
       const baseSize = websiteData.industry === 'restaurant' ? 11000 : 13000;

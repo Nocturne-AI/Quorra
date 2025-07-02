@@ -1,7 +1,7 @@
 // tests/integration/SparkyIntegration.test.js
 // FIXED VERSION - Updated to work with the new SparkyRuleEngine
 
-import SparkyRuleEngine from '../../src/core/SparkyRuleEngine.js';
+import SparkyRuleEngine from '../../core/SparkyRuleEngine.js';
 import { userProfiles } from '../fixtures/userProfiles.js';
 
 console.log('⚡ Sparky Integration tests loaded - Divine messenger ready for validation');
