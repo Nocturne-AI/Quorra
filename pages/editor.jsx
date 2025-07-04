@@ -9,7 +9,7 @@ import {
   PanelRightClose, Menu, Home, FolderOpen, HelpCircle, LogOut,
   Play, ExternalLink, Minimize2
 } from 'lucide-react';
-
+import { QuorraLayout } from '../components/QuorraNavigation';
 const QuorraEditorLight = () => {
   const [selectedTool, setSelectedTool] = useState('select');
   const [selectedComponent, setSelectedComponent] = useState(null);

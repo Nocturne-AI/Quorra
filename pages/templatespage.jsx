@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Search, Sparkles, ArrowRight, Zap, Star, Clock, ChevronRight, Wand2 } from 'lucide-react';
-
+import { QuorraLayout } from '../components/QuorraNavigation';
 const AICreationPage = () => {
   const [currentStep, setCurrentStep] = useState('category');
   const [selectedCategory, setSelectedCategory] = useState(null);

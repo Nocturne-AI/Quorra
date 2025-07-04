@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Settings, Shield, User, Palette, Sparkles, Save, Crown } from 'lucide-react';
-
+import { QuorraLayout } from '../components/QuorraNavigation';
 const QuorraSettingsPage = () => {
   const [activeSection, setActiveSection] = useState('profile');
   const [forgeTemp, setForgeTemp] = useState('divine'); // New state for forge temperature
