@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Search, Sparkles, ArrowRight, Zap, Star, Clock, ChevronRight, Wand2 } from 'lucide-react';
 import { QuorraLayout } from '../src/components/QuorraNavigation';
+import DynamicTemplateGenerator from '../src/utils/templateGenerator';
 const AICreationPage = () => {
   const [currentStep, setCurrentStep] = useState('category');
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -148,29 +149,10 @@ const AICreationPage = () => {
     }
   ];
 
-  const generatedTemplates = [
-    {
-      id: 1,
-      name: 'Divine Authority',
-      style: 'Professional healthcare with warm accents',
-      features: ['Appointment Booking', 'Doctor Profiles', 'Trust Signals', 'Patient Testimonials'],
-      aiReasoning: 'Combined healthcare trust patterns with warm personality for approachable authority'
-    },
-    {
-      id: 2,
-      name: 'Healing Sanctuary',
-      style: 'Compassionate care with modern design',
-      features: ['Service Overview', 'Calm Color Palette', 'Patient Journey', 'Contact Forms'],
-      aiReasoning: 'Emphasized calming elements while maintaining professional medical credibility'
-    },
-    {
-      id: 3,
-      name: 'Wellness Expert',
-      style: 'Premium healthcare with luxury touches',
-      features: ['Executive Profiles', 'Premium Imagery', 'Consultation Booking', 'Credentials Display'],
-      aiReasoning: 'Elevated professional design for high-end healthcare positioning'
-    }
-  ];
+  const templateGenerator = new DynamicTemplateGenerator();
+const generatedTemplates = selectedCategory && Object.keys(brandPersonality).length > 0 
+  ? templateGenerator.generateTemplates(selectedCategory, brandPersonality)
+  : [];
 
   const handleCategorySelect = (category) => {
     setSelectedCategory(category);

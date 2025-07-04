@@ -45,7 +45,7 @@ const QuorraSettingsPage = () => {
 
   const colors = getColorScheme();
   return (
-    <div className={`min-h-screen bg-gradient-to-br ${colors.mainBg}`}>
+    <QuorraLayout>
       {/* Divine Header */}
       <header className={`bg-gradient-to-r ${colors.headerBg} shadow-2xl`}>
         <div className="max-w-7xl mx-auto px-6 py-4">
@@ -363,7 +363,7 @@ const QuorraSettingsPage = () => {
           </div>
         </div>
       </div>
-    </div>
+   </QuorraLayout>
   );
 };
 

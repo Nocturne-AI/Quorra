@@ -24,7 +24,7 @@ const SignupPage = () => {
   };
 
   return (
-    <div style={{
+    <QuorraLayout>
       minHeight: '100vh',
       background: 'linear-gradient(to bottom right, #18181b, #1c1917, #451a03)',
       color: 'white',
@@ -33,7 +33,7 @@ const SignupPage = () => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center'
-    }}>
+  
       {/* Floating Embers Background - Same as homepage */}
       <div style={{ position: 'absolute', inset: '0', pointerEvents: 'none' }}>
         <div style={{
@@ -370,7 +370,7 @@ const SignupPage = () => {
           }
         }
       `}</style>
-    </div>
+    </QuorraLayout>
   );
 };
 

@@ -169,13 +169,13 @@ const QuorraPricing = () => {
   };
 
   return (
-    <div style={{
+    <QuorraLayout>
       minHeight: '100vh',
       background: 'linear-gradient(to bottom right, #18181b, #1c1917, #451a03)',
       color: 'white',
       position: 'relative',
       overflow: 'hidden'
-    }}>
+  
       {/* Floating Embers Background */}
       <div style={{ position: 'absolute', inset: '0', pointerEvents: 'none' }}>
         <div style={{
@@ -942,7 +942,7 @@ const QuorraPricing = () => {
           }
         }
       `}</style>
-    </div>
+    </QuorraLayout>
   );
 };
 
