@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Search, Sparkles, ArrowRight, Zap, Star, Clock, ChevronRight, Wand2 } from 'lucide-react';
 import { QuorraLayout } from '../src/components/QuorraNavigation';
 import DynamicTemplateGenerator from '../src/utils/templateGenerator';
-const AICreationPage = () => {
+const TemplatesPage = () => {
   const [currentStep, setCurrentStep] = useState('category');
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [brandPersonality, setBrandPersonality] = useState({});
@@ -888,4 +888,4 @@ const generatedTemplates = selectedCategory && Object.keys(brandPersonality).len
   );
 };
 
-export default AICreationPage;
+export default TemplatesPage;

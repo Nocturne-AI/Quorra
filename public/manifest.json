@@ -1,11 +1,11 @@
 {
   "name": "QUORRA - Divine Website Builder",
   "short_name": "QUORRA",
-  "description": "Channel the divine fire of clean code generation",
+  "description": "Channel the Goddess of Smithing to forge divine websites",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#1A1A1A",
-  "theme_color": "#FF8C42",
+  "background_color": "#1f2937",
+  "theme_color": "#f97316",
   "icons": [
     {
       "src": "/images/logos/quorra-icon.png",
