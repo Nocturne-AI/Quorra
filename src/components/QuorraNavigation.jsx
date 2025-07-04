@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { useAuth } from '../src/hooks/useAuth';
+import { useAuth } from '../hooks/useAuth';
 import { Menu, X, Flame, User, LogOut, Settings, Crown } from 'lucide-react';
 
 // Main Navigation Header Component
