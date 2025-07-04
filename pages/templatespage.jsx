@@ -7,89 +7,89 @@ const TemplatesPage = () => {
   const [brandPersonality, setBrandPersonality] = useState({});
   const [generatingProgress, setGeneratingProgress] = useState(0);
 
-  // Business categories with proper conversion psychology
+  // Business categories with proper icon paths
   const businessCategories = [
     {
       id: 'healthcare',
       name: 'Healthcare & Medical',
-      icon: '🏥',
+      icon: '/images/icons/industries/healthcare.png',
       description: 'Compassionate authority with trust-building elements',
       conversionType: 'Need → Trust → Care'
     },
     {
       id: 'restaurant',
       name: 'Restaurant & Food',
-      icon: '🍽️',
+      icon: '/images/icons/industries/restaurant.png',
       description: 'Appetite-driven design with visual storytelling',
       conversionType: 'Appetite → Reservation'
     },
     {
       id: 'technology',
       name: 'SaaS & Technology',
-      icon: '💻',
+      icon: '/images/icons/industries/technology.png',
       description: 'Feature demonstration with trial conversion',
       conversionType: 'Discovery → Trial → Adoption'
     },
     {
       id: 'ecommerce',
       name: 'E-commerce & Retail',
-      icon: '🛍️',
+      icon: '/images/icons/industries/ecommerce.png',
       description: 'Purchase optimization with demographic targeting',
       conversionType: 'Browse → Purchase'
     },
     {
       id: 'finance',
       name: 'Finance & Banking',
-      icon: '💰',
+      icon: '/images/icons/industries/finance.png',
       description: 'Trust-based compliance and consultation',
       conversionType: 'Research → Evaluate → Trust → Engage'
     },
     {
       id: 'realestate',
       name: 'Real Estate',
-      icon: '🏠',
+      icon: '/images/icons/industries/realestate.png',
       description: 'Property visualization and local expertise',
       conversionType: 'Browse → Visualize → Connect'
     },
     {
       id: 'professional',
       name: 'Professional Services',
-      icon: '💼',
+      icon: '/images/icons/industries/professional.png',
       description: 'Authority-based consultation building',
       conversionType: 'Need → Research → Consultation'
     },
     {
       id: 'creative',
       name: 'Creative & Portfolio',
-      icon: '🎨',
+      icon: '/images/icons/industries/creative.png',
       description: 'Audience-building engagement focus',
       conversionType: 'Discover → Engage → Follow'
     },
     {
       id: 'nonprofit',
       name: 'Non-Profit & Charity',
-      icon: '❤️',
+      icon: '/images/icons/industries/nonprofit.png',
       description: 'Mission-driven donation optimization',
       conversionType: 'Discover → Connect → Act → Sustain'
     },
     {
       id: 'education',
       name: 'Education & Learning',
-      icon: '📚',
+      icon: '/images/icons/industries/education.png',
       description: 'Institutional authority and student journey',
       conversionType: 'Explore → Evaluate → Apply → Enroll'
     },
     {
       id: 'elearning',
       name: 'E-learning & Courses',
-      icon: '💡',
+      icon: '/images/icons/industries/elearning.png',
       description: 'Course-centric skill development',
       conversionType: 'Explore → Sample → Enroll → Complete'
     },
     {
       id: 'fitness',
       name: 'Fitness & Wellness',
-      icon: '💪',
+      icon: '/images/icons/industries/fitness.png',
       description: 'Transformation-focused community building',
       conversionType: 'Motivate → Inspire → Trial → Transform'
     }
@@ -270,7 +270,14 @@ const TemplatesPage = () => {
                 >
                   <div className="text-center">
                     <div className="w-16 h-16 mx-auto mb-4 bg-black/30 rounded-xl flex items-center justify-center border border-amber-600/20">
-                      <span className="text-3xl filter brightness-110 drop-shadow-lg">{category.icon}</span>
+                      <img 
+                        src={category.icon}
+                        alt={`${category.name} Icon`}
+                        className="w-12 h-12 object-contain"
+                        style={{
+                          filter: 'brightness(1.2) contrast(1.1) drop-shadow(0 0 8px rgba(205, 127, 50, 0.3))'
+                        }}
+                      />
                     </div>
                     <h3 className="text-xl font-bold text-amber-200 mb-2">
                       {category.name}
