@@ -1,5 +1,10 @@
-/**
- * QUORRA UNIFIED CSS SYSTEM
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your existing CSS goes below */
+
+ /* * QUORRA UNIFIED CSS SYSTEM
  * "Channel the divine fire of clean code generation"
  * 
  * Single source of truth for all QUORRA styling
