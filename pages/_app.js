@@ -94,9 +94,9 @@ export default function QuorraApp({ Component, pageProps }) {
         
         {/* PWA support */}
         <link rel="manifest" href="/manifest.json" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="QUORRA" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-status-bar-style" content="default" />
+        <meta name="mobile-web-app-title" content="QUORRA" />
         
         {/* Open Graph */}
         <meta property="og:type" content="website" />
