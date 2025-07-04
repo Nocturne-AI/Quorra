@@ -1,17 +1,8 @@
 // src/utils/templateGenerator.js
 // FULL TEMPLATE GENERATOR - USES YOUR EXISTING INTELLIGENCE SYSTEM
-
-import IndustryIntelligence from '../intelligence/IndustryIntelligence';
-import ColorIntelligence from '../intelligence/ColorIntelligence';
-import TypographyIntelligence from '../intelligence/TypographyIntelligence';
-import LayoutIntelligence from '../intelligence/LayoutIntelligence';
-
-class DynamicTemplateGenerator {
+  class DynamicTemplateGenerator {
   constructor() {
-    this.industryIntel = new IndustryIntelligence();
-    this.colorIntel = new ColorIntelligence();
-    this.typoIntel = new TypographyIntelligence();
-    this.layoutIntel = new LayoutIntelligence();
+    console.log('Template generator initialized successfully!');
   }
 
   /**
