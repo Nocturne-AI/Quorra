@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Plus, Search, Filter, MoreVertical, Eye, Edit, Download, Trash2, Sparkles, Zap, Clock, Users, Star, ArrowRight, Bell, Settings, LogOut, Folder, Grid, List } from 'lucide-react';
-import { QuorraLayout } from '../components/QuorraNavigation';
+import { QuorraLayout } from '../src/components/QuorraNavigation';
 const QuorraDashboard = () => {
   const [viewMode, setViewMode] = useState('grid'); // grid or list
   const [selectedFilter, setSelectedFilter] = useState('all');

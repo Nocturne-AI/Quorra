@@ -1,5 +1,5 @@
 import React from 'react';
-import { QuorraLayout } from '../components/QuorraNavigation';
+import { QuorraLayout } from '../src/components/QuorraNavigation';
 const QuorraLandingPage = () => {
   return (
     <div style={{

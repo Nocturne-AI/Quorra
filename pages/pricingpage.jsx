@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Check, X, Star, Sparkles, ArrowRight, Zap, Users, Crown, Shield, Calendar } from 'lucide-react';
-import { QuorraLayout } from '../components/QuorraNavigation';
+import { QuorraLayout } from '../src/components/QuorraNavigation';
 const QuorraPricing = () => {
   const [billingCycle, setBillingCycle] = useState('annual'); // monthly or annual
   const [selectedTier, setSelectedTier] = useState('hammer');

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { QuorraLayout } from '../components/QuorraNavigation';
+import { QuorraLayout } from '../src/components/QuorraNavigation';
 const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
