@@ -1,6 +1,8 @@
 import React, { useState, useRef, useCallback } from 'react';
 import './Canvas.css';
+"use client";
 
+import React from 'react';
 /**
  * QUORRA DIVINE CANVAS COMPONENT
  * Sacred design workspace blessed by the Goddess of Smithing

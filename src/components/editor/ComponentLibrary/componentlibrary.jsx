@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './ComponentLibrary.css';
+"use client";
 
+import React from 'react';
 /**
  * QUORRA DIVINE COMPONENT LIBRARY
  * Sacred collection of blessed UI components

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Toolbar.css';
+"use client";
 
+import React from 'react';
 /**
  * QUORRA DIVINE TOOLBAR COMPONENT
  * Sacred command center blessed by the Goddess of Smithing

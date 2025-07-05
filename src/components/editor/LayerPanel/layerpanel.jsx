@@ -1,6 +1,8 @@
 import React, { useState, useCallback } from 'react';
 import './LayerPanel.css';
+"use client";
 
+import React from 'react';
 /**
  * QUORRA DIVINE LAYER PANEL
  * Sacred element hierarchy blessed by the Goddess of Smithing

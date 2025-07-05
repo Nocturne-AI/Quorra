@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './PropertyPanel.css';
+"use client";
 
+import React from 'react';
 /**
  * QUORRA DIVINE PROPERTY PANEL
  * Sacred element configuration blessed by the Goddess of Smithing
